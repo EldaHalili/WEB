@@ -8,11 +8,11 @@
     --font2: 'Fira Sans Extra Condensed', sans-serif;
     --font3: 'Roboto', sans-serif;
 
-    --btnbg: #b68d8d;
-    --btnfontcolor: rgb(61, 61, 61);
+    --btnbg: #6d5b5b;
+    --btnfontcolor: rgb(7, 0, 0);
     --btnfontcolorhover: rgb(255, 255, 255);
-    --btnbghover: #ffc116;
-    --btnactivefs: rgb(193, 184, 156);
+    --btnbghover: #e60d0d;
+    --btnactivefs: rgb(109, 91, 91);
 
 
     --label-index: #e60d0d;
@@ -31,7 +31,7 @@
 }
 
 .card {
-    background: #fff;
+    background: #d8cbcb;
     box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
     transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
     border: 0;
@@ -79,7 +79,7 @@
 .label-top {
     position: absolute;
     background-color: var(--label-index);
-    color: #fff;
+    color: #ffffff;
     top: 8px;
     right: 8px;
     padding: 5px 10px 5px 10px;
@@ -102,7 +102,7 @@
     background: #8bc34a;
     line-height: 90px;
     text-align: center;
-    color: white;
+    color: #ffffff;
 }
 
 .top-right span {
@@ -118,7 +118,7 @@
 }
 
 .over-bg {
-    background: rgba(53, 53, 53, 0.85);
+    background: rgb(109, 91, 91);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(0.0px);
     -webkit-backdrop-filter: blur(0.0px);
@@ -192,7 +192,7 @@
 .price-hp {
     font-size: 1rem;
     font-weight: 600;
-    color: darkgray;
+    color: #ffffff;
 }
 
 .amz-hp {
@@ -210,5 +210,5 @@
     color:crimson;
 }
 .fa-chevron-circle-right:before {
-    color: darkgray;
+    color: #500d0d;
 }
