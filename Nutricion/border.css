@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    text-align: center; /* Aligns text center within main */
+    padding: 5rem;
+    background-color: #93a3d8;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally */
+}
+
+footer {
+    background-color: #11395a;
+    color: seagreen;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.5s; /* ndryshimi ne card me sa sec */
+    color: palevioletred;
+    background-color: #302b63;
+    border-radius: 45px;
+    width: 500px;
+    margin: 30px;
+    padding: 10px;
+    border: 3px solid #551650;
+
+}
+.card:hover {
+    box-shadow: 0 10px 16px 0 rgb(53, 157, 177);
+}
+
+.container {
+    padding: 10px 16px; /*largesia nga kufiri*/
+    max-left: 300px;
+
+}
+
+div:hover{
+    background-color: rgb(2, 45, 53);
+    color: rgb(108, 155, 197);
+    border-radius:45px;
+    border: 2px solid #11395a;
+}

@@ -12,6 +12,12 @@ body {
     background-color: #f8f8f8;
 }
 
+hr {
+    color: #302b63;
+    height: 12px;
+    margin: 20px 0;
+}
+
 /* Container styles */
 #ContactUs {
     max-width: 600px;
