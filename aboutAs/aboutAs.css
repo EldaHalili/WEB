@@ -1,0 +1,167 @@
+/* about_styles.css */
+
+/* Global Styles */
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h2 {
+    color: #333;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.team-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+/* Add CSS for testimonials carousel */
+.testimonial-carousel {
+    overflow: hidden;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonials-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    position: relative; /* Ensure position relative for absolute positioning */
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 20px;
+    flex: 0 0 auto;
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex; /* Ensure buttons are aligned horizontally */
+}
+
+.carousel-buttons button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #666;
+}
+
+.carousel-buttons button:first-child {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px; /* Adjust as needed */
+    z-index: 1; /* Ensure it's above the testimonials container */
+}
+
+.carousel-buttons button:last-child {
+    /*position: auto;*/
+    top: 5%;
+    transform: translateY(-50%);
+    right: 5px; /* Adjust as needed */
+    z-index: 3; /* Ensure it's above the testimonials container */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-info, .footer-social {
+    display: inline-block;
+    text-align: left;
+    margin: 0 10px;
+}
+
+.footer-social ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-social ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Button Styles */
+/*.btn1 {*/
+/*    display: inline-block;*/
+/*    background-color: #4CAF50;*/
+/*    color: white;*/
+/*    padding: 10px 20px;*/
+/*    text-align: center;*/
+/*    text-decoration: none;*/
+/*    font-size: 16px;*/
+/*    cursor: pointer;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    transition: background-color 0.3s;*/
+/*}*/
+
+.btn1:hover {
+    background-color: #45a049;
+}

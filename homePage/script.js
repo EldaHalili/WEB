@@ -101,4 +101,4 @@ const wrap3 = new parallaxTiltEffect({
     tiltEffect: 'reverse'
 });
 
-//edhe kjo
+//edhe kjoooo
