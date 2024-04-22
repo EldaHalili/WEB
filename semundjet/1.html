@@ -3,201 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
-  <title>Dieta ne baze te semundjeve </title>
+  <title>Animated and Responsive Accordion</title>
+  <!-- Connect your CSS file here -->
   <link rel="stylesheet" href="css.css">
 </head>
-<div id="aspect-content">
-    <div class="aspect-tab ">
-      <input id="item-18" type="checkbox" class="aspect-input" name="aspect">
-      <label for="item-18" class="aspect-label"></label>
-      <div class="aspect-content">
-          <div class="aspect-info">
-              <div class="chart-pie negative over50">
-                  <span class="chart-pie-count">-69</span>
-                  <div>
-                      <div class="first-fill"></div>
-                      <div class="second-fill" style="transform: rotate(249deg)"></div>
-                  </div>
-              </div>
-              <span class="aspect-name">Hipertensioni</span>
+<body>
+  <!-- Your HTML content goes here -->
+  <section class="section_accordion">
+    <h1>Animated and Responsive Accordion<br><small>Pure Javascript and CSS</small></h1>
+
+    <div class="accordion">
+      <div class="card is-active">
+        <a class="card__title is-active" data-toggle="collapse" href="#content1">
+          Lorem ipsum dolor
+          <svg class="icon icon-keyboard_arrow_down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+          </svg>
+        </a>
+
+        <div id="content1" class="collapse is-active" data-parent=".accordion">
+          <div class="card__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, illo, vero. Blanditiis nam quae, maiores possimus totam doloribus aliquam, non, aliquid dolores cum distinctio porro, itaque recusandae ad aperiam voluptates!
           </div>
-          <div class="aspect-stat">
-              <div class="all-opinions">
-                  <span class="all-opinions-count">18</span>
-                  <span>opinion</span>
-              </div>
-              <div>
-                  <span class="positive-count">4</span>
-                  <span class="neutral-count">1</span>
-                  <span class="negative-count">13</span>
-              </div>
-          </div>
+        </div>
       </div>
-      <div class="aspect-tab-content">
-          <div class="sentiment-wrapper">
-              <div>
-                  <div>
-                      <div class="positive-count opinion-header">
-                          <span>cfare duhet te hame?</span>
-                          <span>4</span>
-                      </div>
-                      <div>
-                          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id congue dolor. Vivamus eleifend vitae nunc sed tincidunt.</span>
-                      </div>
-                  </div>
-              </div>
-              <div>
-                  <div>
-                      <div class="neutral-count opinion-header">
-                          <span>neutral</span>
-                          <span>1</span>
-                      </div>
-                      <div>
-                          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id congue dolor. Vivamus eleifend vitae nunc sed tincidunt.</span>
-                      </div>
-                  </div>
-              </div>
-              <div>
-                  <div>
-                      <div class="negative-count opinion-header">
-                          <span>negative</span>
-                          <span>13</span>
-                      </div>
-                      <div>
-                          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id congue dolor. Vivamus eleifend vitae nunc sed tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id congue dolor. Vivamus eleifend vitae nunc sed tincidunt.</span>
-                      </div>
-                  </div>
-              </div>
+
+      <div class="card">
+        <a class="card__title" data-toggle="collapse" href="#content2">
+          Lorem ipsum dolor sit amet
+          <svg class="icon icon-keyboard_arrow_down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+          </svg>
+        </a>
+
+        <div id="content2" class="collapse" data-parent=".accordion">
+          <div class="card__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, illo, vero. Blanditiis nam quae, maiores possimus totam doloribus aliquam, non, aliquid dolores cum distinctio porro, itaque recusandae ad aperiam voluptates!
           </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4 class="card__title" data-toggle="collapse" data-target="#content3">
+          Lorem ipsum dolor sit
+          <svg class="icon icon-keyboard_arrow_down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+          </svg>
+        </h4>
+
+        <div id="content3" class="collapse" data-parent=".accordion">
+          <div class="card__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, illo, vero. Blanditiis nam quae, maiores possimus totam doloribus aliquam, non, aliquid dolores cum distinctio porro, itaque recusandae ad aperiam voluptates!
+          </div>
+        </div>
       </div>
     </div>
-    <div class="aspect-tab ">
-      <input id="item-14" type="checkbox" class="aspect-input" name="aspect">
-      <label for="item-14" class="aspect-label"></label>
-      <div class="aspect-content">
-          <div class="aspect-info">
-              <div class="chart-pie positive over50">
-                  <span class="chart-pie-count">58</span>
-                  <div>
-                      <div class="first-fill"></div>
-                      <div class="second-fill" style="transform: rotate(209deg)"></div>
-                  </div>
-              </div>
-              <span class="aspect-name">Lorem ipsum dolor sit amet</span>
-          </div>
-          <div class="aspect-stat">
-              <div class="all-opinions">
-                  <span class="all-opinions-count">22</span>
-                  <span>opinion</span>
-              </div>
-              <div>
-                  <span class="positive-count">12</span>
-                  <span class="neutral-count">5</span>
-                  <span class="negative-count">5</span>
-              </div>
-          </div>
-      </div>
-      <div class="aspect-tab-content">
-          <div class="sentiment-wrapper">
-              <div>
-                  <div>
-                      <div class="positive-count opinion-header">
-                          <span>positive</span>
-                          <span>12</span>
-                      </div>
-                      <div>
-                          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id congue dolor. Vivamus eleifend vitae nunc sed tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id congue dolor. Vivamus eleifend vitae nunc sed tincidunt.</span>
-                      </div>
-                  </div>
-              </div>
-              <div>
-                  <div>
-                      <div class="neutral-count opinion-header">
-                          <span>neutral</span>
-                          <span>5</span>
-                      </div>
-                      <div>
-                          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id congue dolor. Vivamus eleifend vitae nunc sed tincidunt.</span>
-                      </div>
-                  </div>
-              </div>
-              <div>
-                  <div>
-                      <div class="negative-count opinion-header">
-                          <span>negative</span>
-                          <span>5</span>
-                      </div>
-                      <div>
-                          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id congue dolor. Vivamus eleifend vitae nunc sed tincidunt.</span>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
-    <div class="aspect-tab ">
-      <input id="item-2" type="checkbox" class="aspect-input" name="aspect">
-      <label for="item-2" class="aspect-label"></label>
-      <div class="aspect-content">
-          <div class="aspect-info">
-              <div class="chart-pie positive">
-                  <span class="chart-pie-count">33</span>
-                  <div>
-                      <div class="first-fill"></div>
-                      <div class="second-fill" style="transform: rotate(119deg)"></div>
-                  </div>
-              </div>
-              <span class="aspect-name">Lorem</span>
-          </div>
-          <div class="aspect-stat">
-              <div class="all-opinions">
-                  <span class="all-opinions-count">7</span>
-                  <span>opinion</span>
-              </div>
-              <div>
-                  <span class="positive-count">3</span>
-                  <span class="neutral-count">2</span>
-                  <span class="negative-count">2</span>
-              </div>
-          </div>
-      </div>
-      <div class="aspect-tab-content">
-          <div class="sentiment-wrapper">
-              <div>
-                  <div>
-                      <div class="positive-count opinion-header">
-                          <span>positive</span>
-                          <span>3</span>
-                      </div>
-                      <div>
-                          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id congue dolor. Vivamus eleifend vitae nunc sed tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                      </div>
-                  </div>
-              </div>
-              <div>
-                  <div>
-                      <div class="neutral-count opinion-header">
-                          <span>neutral</span>
-                          <span>2</span>
-                      </div>
-                      <div>
-                          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id congue dolor. Vivamus eleifend vitae nunc sed tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id congue dolor. Vivamus eleifend vitae nunc sed tincidunt.</span>
-                      </div>
-                  </div>
-              </div>
-              <div>
-                  <div>
-                      <div class="negative-count opinion-header">
-                          <span>negative</span>
-                          <span>2</span>
-                      </div>
-                      <div>
-                          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id congue dolor. Vivamus eleifend vitae nunc sed tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id congue dolor. Vivamus eleifend vitae nunc sed tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id congue dolor. Vivamus eleifend vitae nunc sed tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id congue dolor. Vivamus eleifend vitae nunc sed tincidunt.</span>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
-  </div>
+  </section>
+
+  <!-- Connect your JavaScript file here -->
+  <script src="js.js"></script>
+
+</body>
+</html>
