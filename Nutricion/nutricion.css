@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
     margin: 0;
     padding: 0;
 }
@@ -21,6 +21,9 @@ footer {
     margin-top: 1rem;
 }
 
+.the-content{
+    text-align: center;
+}
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.5s; /* ndryshimi ne card me sa sec */
@@ -43,7 +46,7 @@ footer {
 
 }
 
-div:hover{
+div.card:hover{
     background-color: rgb(2, 45, 53);
     color: rgb(108, 155, 197);
     border-radius:45px;
