@@ -4,13 +4,6 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
 main {
     text-align: center; /* Aligns text center within main */
     padding: 5rem;
@@ -28,7 +21,7 @@ footer {
     margin-top: 1rem;
 }
 
-.card {
+.card-sub {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.5s; /* ndryshimi ne card me sa sec */
     color: palevioletred;
@@ -40,7 +33,7 @@ footer {
     border: 3px solid #551650;
 
 }
-.card:hover {
+.card-sub:hover {
     box-shadow: 0 10px 16px 0 rgb(53, 157, 177);
 }
 
@@ -55,4 +48,55 @@ div:hover{
     color: rgb(108, 155, 197);
     border-radius:45px;
     border: 2px solid #11395a;
+}
+.day {
+    background-color: #ae9aac;
+    padding: 10px 0;
+    border-radius:5px;
+}
+
+.days {
+    list-style-type: none;
+    text-align: center;
+}
+
+.days li {
+    display: inline-block; /*forma e blloqeve qe permban ditet*/
+}
+
+.days li a {
+    display: block;
+    padding: 10px 20px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: rgb(243, 238, 238);
+    background: rgb(151, 103, 146);
+    border-radius:15px;
+    border: 2px solid #d59fd0;
+}
+
+.days li a:hover {
+    background-color: #551650;
+    box-shadow: 0 10px 16px 0 rgb(151, 103, 146);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #551650;
+}
+
+ul {
+    list-style-type:none; /* nuk ka asnje simbol para listave */
+    padding: 10px;
+}
+
+li {
+    margin-bottom: 10px;
 }
