@@ -275,7 +275,7 @@ h1+p {
   position: relative;
   transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
 
-  background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("https://images.unsplash.com/photo-1559113513-d5e09c78b9dd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9");
+  background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("https://i.pinimg.com/originals/6e/25/6a/6e256ae60527afd05583d17676a622e5.jpg");
   background-position: var(--bX) var(--bY);
   background-size: 40rem auto;
   box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
@@ -327,7 +327,7 @@ h1+p {
 }
 
 .container p {
-  color: hsla(0, 0%, 100%, .6);
+  color: hsl(0, 100%, 1%);
   font-size: 2.2rem;
 }
 
@@ -341,7 +341,7 @@ h1+p {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  color: hsla(0, 0%, 0%, .6);
+  color: hsl(0, 100%, 1%);
   font-size: 1.6rem;
 }
 

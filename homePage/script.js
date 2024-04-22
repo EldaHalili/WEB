@@ -1,12 +1,3 @@
-// by
-// abubakersaeed.netlify.com | @AbubakerSaeed96
-// ============================================
-
-// Inspiration:
-// Tilt.js: https://gijsroge.github.io/tilt.js/
-// Andy Merskin's parallax depth cards pen: https://codepen.io/andymerskin/full/XNMWvQ/
-
-// Thank You for Viewing
 
 class parallaxTiltEffect {
 
@@ -38,20 +29,18 @@ class parallaxTiltEffect {
         let Y;
 
         if (this.tiltEffect === "reverse") {
-            X = ((offsetX - (this.w/2)) / 3) / 3;
-            Y = (-(offsetY - (this.h/2)) / 3) / 3;
-        }
-
-        else if (this.tiltEffect === "normal") {
-            X = (-(offsetX - (this.w/2)) / 3) / 3;
-            Y = ((offsetY - (this.h/2)) / 3) / 3;
+            X = ((offsetX - (this.w / 2)) / 3) / 3;
+            Y = (-(offsetY - (this.h / 2)) / 3) / 3;
+        } else if (this.tiltEffect === "normal") {
+            X = (-(offsetX - (this.w / 2)) / 3) / 3;
+            Y = ((offsetY - (this.h / 2)) / 3) / 3;
         }
 
         this.setProperty('--rY', X.toFixed(2));
         this.setProperty('--rX', Y.toFixed(2));
 
-        this.setProperty('--bY', (80 - (X/4).toFixed(2)) + '%');
-        this.setProperty('--bX', (50 - (Y/4).toFixed(2)) + '%');
+        this.setProperty('--bY', (80 - (X / 4).toFixed(2)) + '%');
+        this.setProperty('--bX', (50 - (Y / 4).toFixed(2)) + '%');
     }
 
     handleMouseEnter() {
@@ -102,3 +91,25 @@ const wrap3 = new parallaxTiltEffect({
 });
 
 //edhe kjoooo
+// For the "Nutrition Plan" button
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all elements with the class "btn" (which are the "View More" buttons)
+    var buttons = document.querySelectorAll('.btn');
+
+    // Add click event listeners to all "View More" buttons
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            // Prevent the default behavior of the button (e.g., form submission)
+            event.preventDefault();
+
+            // Get the href attribute of the button's parent anchor tag
+            var href = button.getAttribute('href');
+
+            // Navigate to the linked page
+            window.location.href = href;
+        });
+    });
+});
+
+
+
