@@ -25,39 +25,44 @@
 }
 
 
-.container-fluid {
-    max-width: 1400px;
+.container-fluid-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*max-width: 2000px;*/
 
 }
 
-.card {
+.card-sub {
     background: #d8cbcb;
     box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
     transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
     border: 0;
     border-radius: 1rem;
+    width: 400px; /* Set width to 100% for responsiveness */
+    height:1000px;
 }
 
-.card-img,
-.card-img-top {
+.card-img-sub,
+.card-img-top-sub {
     border-top-left-radius: calc(1rem - 1px);
     border-top-right-radius: calc(1rem - 1px);
 }
 
 
-.card h5 {
+.card-sub h5 {
     overflow: hidden;
     height: 55px;
     font-weight: 300;
     font-size: 1rem;
 }
 
-.card h5 a {
+.card-sub h5 a {
     color: black;
     text-decoration: none;
 }
 
-.card-img-top {
+.card-img-top-sub {
     width: 100%;
     min-height: 250px;
     max-height: 250px;
@@ -65,18 +70,18 @@
     padding: 30px;
 }
 
-.card h2 {
-    font-size: 1rem;
-}
+/*.card-sub h2 {*/
+/*    font-size: 1rem;*/
+/*}*/
 
 
-.card:hover {
+.card-sub:hover {
     transform: scale(1.02);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
 }
 
 /* Centered text */
-.label-top {
+.label-top-sub {
     position: absolute;
     background-color: var(--label-index);
     color: #ffffff;
@@ -86,10 +91,18 @@
     font-size: .7rem;
     font-weight: 600;
     border-radius: 3px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
+    display: none; /* Display SALE label by default */
 }
 
-.top-right {
+
+.col.hp:first-child:hover .label-top-sub,
+.col.hp:last-child:hover .label-top-sub {
+    display: block; /* Display SALE label on hover of first or last card */
+}
+
+
+.top-right-sub {
     position: absolute;
     top: 24px;
     left: 24px;
@@ -105,7 +118,7 @@
     color: #ffffff;
 }
 
-.top-right span {
+.top-right-sub span {
     display: inline-block;
     vertical-align: middle;
     /* line-height: normal; */
@@ -124,30 +137,38 @@
     -webkit-backdrop-filter: blur(0.0px);
     border-radius: 10px;
 }
-.bold-btn {
+
+.bold-btn-sub {
 
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
     padding: 5px 50px 5px 50px;
 }
-.box .btn {
+
+.box .btn-sub {
     font-size: 1.5rem;
 }
 
 @media (max-width: 1025px) {
-    .btn {
+    .btn-sub {
         padding: 5px 40px 5px 40px;
     }
 }
+
 @media (max-width: 250px) {
-    .btn {
+    .btn-sub {
         padding: 5px 30px 5px 30px;
+    }
+}
+@media (max-width: 968px) {
+    .card-sub {
+        width: 100%; /* Set width to 100% for responsiveness on smaller screens */
     }
 }
 
 /* START BUTTON */
-.btn-warning {
+.btn-warning-sub {
     background: var(--btnbg);
     color: var(--btnfontcolor);
     fill: #ffffff;
@@ -157,20 +178,24 @@
     /* box-shadow: -1px 6px 19px rgba(247, 129, 10, 0.25); */
     border-radius: 100px;
 }
-.btn-warning:hover {
+
+.btn-warning-sub:hover {
     background: var(--btnbghover);
     color: var(--btnfontcolorhover);
     /* box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35); */
 }
-.btn-check:focus + .btn-warning, .btn-warning:focus {
+
+.btn-check-sub:focus + .btn-warning-sub, .btn-warning-sub:focus {
     background: var(--btnbghover);
     color: var(--btnfontcolorhover);
     /* box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35); */
 }
-.btn-warning:active:focus {
+
+.btn-warning-sub:active:focus {
     box-shadow: 0 0 0 0.25rem var(--btnactivefs);
 }
-.btn-warning:active {
+
+.btn-warning-sub:active {
     background: var(--btnbghover);
     color: var(--btnfontcolorhover);
     /* box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35); */
@@ -180,8 +205,8 @@
 
 .bg-success {
     font-size: 1rem;
-    background-color: var(--btnbg)!important;
-    color: var(--btnfontcolor)!important;
+    background-color: var(--btnbg) !important;
+    color: var(--btnfontcolor) !important;
 }
 
 .bg-danger {
@@ -204,11 +229,24 @@
 .fa-question-circle:before {
     /* content: "\f059"; */
     color: #500d0d;
+    /*margin-top: -5px*/
 }
 
 .fa-heart:before {
-    color:crimson;
+    /*margin-top: -5px;*/
+    margin-top: -55px;
+    color: crimson;
 }
-.fa-chevron-circle-right:before {
-    color: #500d0d;
+
+.float-start .fa-question-circle {
+    margin-top: -20px;
+    margin-left: 15px;
 }
+
+.float-end .fa-heart {
+    margin-top: -20px; /* Adjust this value as needed */
+    margin-right: 15px;
+}
+
+
+

@@ -21,7 +21,7 @@ footer {
     margin-top: 1rem;
 }
 
-.card {
+.card-sub {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.5s; /* ndryshimi ne card me sa sec */
     color: palevioletred;
@@ -33,7 +33,7 @@ footer {
     border: 3px solid #551650;
 
 }
-.card:hover {
+.card-sub:hover {
     box-shadow: 0 10px 16px 0 rgb(53, 157, 177);
 }
 
