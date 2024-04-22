@@ -56,12 +56,15 @@ div.card:hover{
     background-color: #ae9aac;
     padding: 10px 0;
     border-radius:5px;
+    color: #302b63;
+    text-align: center;
 }
 
 .days {
     list-style-type: none;
     text-align: center;
 }
+
 
 .days li {
     display: inline-block; /*forma e blloqeve qe permban ditet*/
@@ -102,4 +105,10 @@ ul {
 
 li {
     margin-bottom: 10px;
+}
+
+img{
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5); /* Adds a subtle shadow */
 }
