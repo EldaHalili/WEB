@@ -25,13 +25,46 @@
     font-family: 'Ubuntu Mono', monospace;
     margin-bottom: 20px;
 }
+.container {
+    --rX: 0;
+    --rY: 0;
+    --bX: 50%;
+    --bY: 80%;
+
+    width: calc(30% - 40px); /* Adjust the width here */
+    max-width: 300px; /* Add a max-width to prevent excessive stretching */
+    height: 30rem; /* Adjust the height if needed */
+    border: 1px solid var(--background-color);
+    border-radius: 1.6rem;
+    padding: 2rem; /* Adjust the padding if needed */
+
+    display: flex;
+    align-items: flex-end;
+
+    position: relative;
+    transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+    background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("https://i.pinimg.com/originals/6e/25/6a/6e256ae60527afd05583d17676a622e5.jpg");
+    background-position: var(--bX) var(--bY);
+    background-size: 40rem auto;
+    box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+
+    transition: transform .6s 1s;
+}
 
 .wrap {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    margin: 2rem; /* Adjust margin to create space between cards */
+    flex: 1; /* Make each card take up equal space */
+    max-width: 300px; /* Add a max-width to prevent excessive stretching */
 }
+
+@media screen and (max-width: 768px) {
+    .wrap {
+        width: calc(50% - 40px); /* Adjust width for smaller screens */
+    }
+}
+
+
 
 .container--1 h2,
 .container--2 h2,
@@ -219,7 +252,7 @@ html {
 }
 
 body {
-  --background-color: hsl(180, 20%, 90%);
+  --background-color: hsl(180, 8%, 44%);
 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 

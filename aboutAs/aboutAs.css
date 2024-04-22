@@ -1,11 +1,9 @@
-/* about_styles.css */
-
-/* Global Styles */
+/* Stilizimi nga style1.css fillon këtu */
 body {
     font-family: 'Ubuntu Mono', monospace;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #6d5b5b;
 }
 
 header, footer {
@@ -39,13 +37,13 @@ a {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: white;
+    background-color: #d8cbcb;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgb(97, 83, 83);
 }
 
 .about-content h2 {
-    color: #333;
+    color: #6d5b5b;
 }
 
 .about-content p {
@@ -80,15 +78,16 @@ a {
 .testimonials-container {
     display: flex;
     transition: transform 0.5s ease;
-    position: relative; /* Ensure position relative for absolute positioning */
+    position: relative;
+    /* Ensure position relative for absolute positioning */
 }
 
 .testimonial {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    padding: 20px;
+    background-color: #d8cbcb;
+    border-radius: 50px;
+    padding: 25px;
     margin-right: 20px;
-    flex: 0 0 auto;
+    flex: 4 0 auto;
 }
 
 .carousel-buttons {
@@ -104,7 +103,7 @@ a {
     font-size: 24px;
     cursor: pointer;
     padding: 5px 10px;
-    color: #666;
+    color: #6d5b5b;
 }
 
 .carousel-buttons button:first-child {
@@ -123,10 +122,8 @@ a {
     z-index: 3; /* Ensure it's above the testimonials container */
 }
 
-
-
 footer {
-    background-color: #333;
+    background-color: #615353;
     color: white;
     padding: 20px 0;
 }
@@ -147,21 +144,103 @@ footer {
     margin-right: 10px;
 }
 
-/* Button Styles */
-/*.btn1 {*/
-/*    display: inline-block;*/
-/*    background-color: #4CAF50;*/
-/*    color: white;*/
-/*    padding: 10px 20px;*/
-/*    text-align: center;*/
-/*    text-decoration: none;*/
-/*    font-size: 16px;*/
-/*    cursor: pointer;*/
-/*    border: none;*/
-/*    border-radius: 5px;*/
-/*    transition: background-color 0.3s;*/
-/*}*/
-
 .btn1:hover {
-    background-color: #45a049;
+    background-color: #d8cbcb;
+}
+/* Stilizimi nga style1.css mbaron këtu */
+
+/* Stilizimi nga style2.css fillon këtu */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100svh;
+    background: #1f2c3a !important;
+    font-family: "Nunito", sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+img {
+    border-radius: 50%;
+    width: clamp(100px, 40vw, 120px);
+    height: clamp(100px, 40vw, 120px);
+    object-fit: cover;
+    object-position: top;
+}
+
+
+
+
+
+header {
+    background: linear-gradient(to top, #1f2c3a 0%, #2f3c4742 100%), url("https://i.pinimg.com/originals/de/90/ed/de90edfac5dc7d840b01d96eef2e6732.jpg") no-repeat 50% 50%/cover;
+    width: 100%;
+    min-height: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+header .header-content {
+    width: min(37.5em, 90%);
+    margin-top: 5em;
+    position: relative;
+    z-index: 10;
+}
+header .header-content span {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.063rem;
+    font-size: clamp(0.8rem, 0.7625rem + 0.1875vw, 0.95rem);
+}
+header .header-content h1 {
+    font-size: clamp(1.5rem, 1.375rem + 0.625vw, 2rem);
+    font-weight: 700;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 75em;
+    margin-inline: auto;
+    gap: 0.938rem;
+    transform: translatey(-3em);
+    position: relative;
+    z-index: 10;
+}
+
+.card {
+    padding: 1.875em 1.25em;
+    max-width: 18.75rem;
+    width: calc(20% - 1.25em); /* Përshtat vlerën bazuar në numrin e kartave */
+    height: 16.875rem;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    position: relative;
+}
+section .card h2 {
+    color: #ffffff; /* Zgjidh ngjyrën që dëshiron për shkrim */
+}
+/* Stilizimi nga style2.css mbaron këtu */
+.about-content.wide {
+    max-width: 2000px; /* Ose madhësia që dëshiron */
+    margin: 0 auto; /* Për të qendruar në qendër */
+}
+.testimonial-heading {
+    color: #fff; /* Ndryshon ngjyrën e fjalës Testimonials në bardhë */
+    text-align: center; /* Zhvendos tekstin në mes */
+}
+.testimonial p {
+    color: #615353; /* Ngjyra që dëshironi për tekstin e komentit */
 }
