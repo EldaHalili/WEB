@@ -8,6 +8,37 @@
   height: 0;
   opacity: 0;
 }
+.container {
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden; /* Hide overflow content */
+}
+
+.box {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid transparent; /* Transparent right border */
+  margin-right: 10px; /* Add space between boxes */
+  box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.14), inset 0px 3px 1px -2px rgba(0, 0, 0, 0.2), inset 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* Adjust as needed */
+.box:last-child {
+  border-right: none; /* Remove right border for the last box */
+  margin-right: 0; /* Remove space for the last box */
+}
+
+/* Adjust styles for h3 and p */
+.box h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.box p {
+  margin-bottom: 0;
+}
+
 
 .accordion {
   --background: #f3f3f3;
@@ -18,6 +49,7 @@
   border: 1px solid #d9d9d9;
   width: 80%; /* Added width to center the accordion */
   margin: auto; /* Added margin auto to center the accordion */
+  margin-bottom: 20px; /*ndryshon hapesiren midis accordion*/
 }
 .accordion .card {
   overflow: hidden;
