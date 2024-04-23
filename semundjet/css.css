@@ -1,4 +1,6 @@
-
+body{
+  background-color: #f4eeee;
+}
 .collapse {
   overflow: hidden;
   transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -131,9 +133,12 @@ h1 {
   margin-bottom: 3rem;
   font-size: 2rem;
   font-weight: 400;
-  color: gray;
+  color: #504b4b;
+  padding: 10px 20px 20px;;
   text-align: center; /* Centering the title */
+  border-bottom: 1px solid #ccc; /* Thin border at the bottom of the header */
 }
+
 
 a {
   color: inherit;
