@@ -33,6 +33,7 @@
 
 }
 
+
 .card-sub {
     background: #d8cbcb;
     box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
@@ -40,7 +41,7 @@
     border: 0;
     border-radius: 1rem;
     width: 400px; /* Set width to 100% for responsiveness */
-    height:1000px;
+    /*height:300px;*/
 }
 
 .card-img-sub,
@@ -247,6 +248,4 @@
     margin-top: -20px; /* Adjust this value as needed */
     margin-right: 15px;
 }
-
-
 

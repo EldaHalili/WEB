@@ -5,44 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Well-being/Nutrition/Catering Platform</title>
     <link rel="stylesheet" href="nutricion.css">
+    <link rel="stylesheet" href="../common/navbar-footer.css">
+
 </head>
 <body>
 
+<nav id="navbar">
+    <ul id="navcontent">
+        <li><a href="../homePage/index.html">Home</a></li>
+        <li><a href="../aboutAs/aboutAs.html">About</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="../contact/contact.html">Contact Us</a></li>
+    </ul>
+
+
+    <a href="../logIn/logIIn.html" class="btn1">Log In</a>
+</nav>
+
 <main>
-    <div  class="the-content">
-    <h2>Nutricionet!</h2>
-    <p >Nutricionet jane esenciale per rritjen, zhvillimin dhe mirëqenien e trupit. Ato jane substancat ushqyese qe organizmi i njeriut i nevojitet per te funksionuar ne menyre te duhur. Nutricionet mund te jene karbohidrate, proteina, yndyra, vitamina, minerale dhe uje.
-        Te ushqyerit eshte thelbësore për të ruajtur shëndetin dhe mirëqenien tonë. Është e rëndësishme të kuptojmë nevojat e trupit tonë nëpërmjet fushës së ushqimit dhe të mbajmë situatën nën kontroll gjithmonë. Duke ndarë nutricionet sipas moshës, ne mund të përcaktojmë me saktësi se çfarë është e shëndetshme për të konsumuar përmes dietës së përditshme. Kjo ndihmon në sigurimin e një balanci të duhur të ushqimit dhe në mbrojtjen e shëndetit tonë në mënyrë efikase.</p>
+    <div class="the-content">
+        <h2>Nutricionet!</h2>
+        <p>Nutricionet jane esenciale per rritjen, zhvillimin dhe mirëqenien e trupit. Ato jane substancat ushqyese qe
+            organizmi i njeriut i nevojitet per te funksionuar ne menyre te duhur. Nutricionet mund te jene
+            karbohidrate, proteina, yndyra, vitamina, minerale dhe uje.
+            Te ushqyerit eshte thelbësore për të ruajtur shëndetin dhe mirëqenien tonë. Është e rëndësishme të kuptojmë
+            nevojat e trupit tonë nëpërmjet fushës së ushqimit dhe të mbajmë situatën nën kontroll gjithmonë. Duke ndarë
+            nutricionet sipas moshës, ne mund të përcaktojmë me saktësi se çfarë është e shëndetshme për të konsumuar
+            përmes dietës së përditshme. Kjo ndihmon në sigurimin e një balanci të duhur të ushqimit dhe në mbrojtjen e
+            shëndetit tonë në mënyrë efikase.</p>
     </div>
-    <div class="card">
-        <div class="container" >
-            <h4><b>Fëmijët e Rritur dhe Adoleshentët</b></h4>
+    <div class="card" onclick="scrollToFemije()">
+        <div class="container">
+            <h4><a href="#femij">Fëmijët e Rritur dhe Adoleshentët</a></h4>
             <p>12-18</p>
         </div>
     </div>
     <div class="card">
         <div class="container">
-            <h4><b>Të Rriturit</b></h4>
+            <h4><a href="#19-40">Të Rriturit</a></h4>
             <p>19-40</p>
         </div>
     </div>
     <div class="card">
         <div class="container">
-            <h4><b>Mosha e Mesme dhe Mosha e Mëvonshme</b></h4>
+            <h4><a href="#mosha">Mosha e Mesme dhe Mosha e Mëvonshme</a></h4>
             <p> 40-50 dhe 50-65 </p>
         </div>
     </div>
     <div class="card">
         <div class="container">
-            <h4><b> Vlerat ushqyese </b></h4>
+            <h4><a href="#vlera"> Vlerat ushqyese </a></h4>
             <p>Fruta dhe Perime</p>
         </div>
     </div>
 </main>
 <nav class="day">
-    <p class="container">Fëmijët e Rritur dhe Adoleshentët (12-18)</p>
-    <ul class="days" >
-        <li><a href="#dita1" >E Hene</a></li>
+    <p class="container" id="femij">Fëmijët e Rritur dhe Adoleshentët (12-18)</p>
+    <ul class="days">
+        <li><a href="#dita1">E Hene</a></li>
         <li><a href="#dita2">E Marte</a></li>
         <li><a href="#dita3">E Merkure</a></li>
         <li><a href="#dita4">E Enjte</a></li>
@@ -52,32 +72,32 @@
         <!-- Shto ditët e tjera këtu -->
     </ul>
 </nav>
-    <section id="dita1" >
-        <h2>E Hene</h2>
-        <ul>
-            <li>Mengjes: Mjalte me fruta të freskëta të pjekura dhe qumësht.</li>
-            <li>Dreka: Spageti me salcë domatesh dhe perime (si qepë dhe speca), sallatë jeshile me avokado dhe domate.</li>
-            <li>Darka: Fileto peshku të ziera me oriz integral dhe brokoli të pjekur.</li>
-        </ul>
-    </section>
-    <hr>
-    <section id="dita2">
-        <h2>E Marte </h2>
-        <ul>
-            <li>Mengjes: Omletë me perime të hollë dhe bukë të plotë.</li>
-            <li>Dreka: Hudhër me mish të ëmbël të pjekur dhe perime të ziera.</li>
-            <li>Darka: Fruta të freskëta të pjekura. </li>
-        </ul>
-    </section>
-    <hr>
-    <section id="dita3">
+<section id="dita1">
+    <h2>E Hene</h2>
+    <ul>
+        <li>Mengjes: Mjalte me fruta të freskëta të pjekura dhe qumësht.</li>
+        <li>Dreka: Spageti me salcë domatesh dhe perime (si qepë dhe speca), sallatë jeshile me avokado dhe domate.</li>
+        <li>Darka: Fileto peshku të ziera me oriz integral dhe brokoli të pjekur.</li>
+    </ul>
+</section>
+<hr>
+<section id="dita2">
+    <h2>E Marte </h2>
+    <ul>
+        <li>Mengjes: Omletë me perime të hollë dhe bukë të plotë.</li>
+        <li>Dreka: Hudhër me mish të ëmbël të pjekur dhe perime të ziera.</li>
+        <li>Darka: Fruta të freskëta të pjekura.</li>
+    </ul>
+</section>
+<hr>
+<section id="dita3">
     <h2>E Merkure </h2>
     <ul>
-          <li>Mengjes: Fruta të freskëta si banane dhe qumësht.</li>
-          <li>Dreka: Supe me perime  </li>
-          <li>Darka: Petulla të pjekura me mish të ëmbël dhe sallatë jeshile.  </li>
+        <li>Mengjes: Fruta të freskëta si banane dhe qumësht.</li>
+        <li>Dreka: Supe me perime</li>
+        <li>Darka: Petulla të pjekura me mish të ëmbël dhe sallatë jeshile.</li>
     </ul>
-   </section>
+</section>
 <hr>
 <section id="dita4">
     <h2>E Enjte</h2>
@@ -117,9 +137,9 @@
 
 
 <nav class="day">
-    <p class="container">Të Rriturit (19-40 vjeç)</p>
-    <ul class="days" >
-        <li><a href="#mosha19_40dita1" >E Hene</a></li>
+    <p class="container" id="19-40">Të Rriturit (19-40 vjeç)</p>
+    <ul class="days">
+        <li><a href="#mosha19_40dita1">E Hene</a></li>
         <li><a href="#mosha19_40dita2">E Marte</a></li>
         <li><a href="#mosha19_40dita3">E Merkure</a></li>
         <li><a href="#mosha19_40dita4">E Enjte</a></li>
@@ -136,7 +156,7 @@
         <li>Dreka: Hudhër me mish të ëmbël të pjekur dhe perime të ziera</li>
         <li>Darka: Fruta të freskëta të pjekura</li>
     </ul>
-<hr>
+    <hr>
     <h3 id="mosha19_40dita2">E Martë</h3>
     <ul>
         <li>Mëngjes: Omletë me perime të hollë dhe bukë të plotë</li>
@@ -182,9 +202,9 @@
 
 
 <nav class="day">
-    <p class="container">Personat mbi 50 vjeç</p>
-    <ul class="days" >
-        <li><a href="#mosha50_plus_dita1" >E Hene</a></li>
+    <p class="container" id="mosha">Personat mbi 50 vjeç</p>
+    <ul class="days">
+        <li><a href="#mosha50_plus_dita1">E Hene</a></li>
         <li><a href="#mosha50_plus_dita2">E Marte</a></li>
         <li><a href="#mosha50_plus_dita3">E Merkure</a></li>
         <li><a href="#mosha50_plus_dita4">E Enjte</a></li>
@@ -246,69 +266,152 @@
 </section>
 
 <nav class="day">
-    <p class="container">Vlerat Ushqyese</p>
-    <ul class="days" >
-        <li><a href="#Fruta" >Fruta </a></li>
+    <p class="container" id="vlera">Vlerat Ushqyese</p>
+    <ul class="days">
+        <li><a href="#Fruta">Fruta </a></li>
         <li><a href="#Perime">Perime</a></li>
     </ul>
 </nav>
 
 <section id="Fruta">
-    <ul>
-        <li>
+    <div class="gallery1">
+        <div class="image">
             <img src="apple.png" alt="Molla">
-            <strong>Mollë:</strong> Përmban fibra, vitaminë C, potas, dhe antioksidantë.
-        </li>
-        <li>
-            <img src="portokall.png" alt="Portokall">
-            <strong>Portokall:</strong> Burim i mirë i vitaminës C, folatit dhe kaliumit.
-        </li>
-        <li>
-            <img src="banane.png" alt="Banane">
-            <strong>Banane:</strong> Mbushur me karbohidrate, vitaminë B6, potas dhe fibra.
-        </li>
-        <li>
+            <div class="caption">
+                <ul>
+                    <li>Pasuri e lartë në vitaminë C.</li>
+                    <li>Burim i mirë i fibrave ushqimore.</li>
+                    <li>Përmban antioksidantë të quajtur flavonoidë.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="image">
             <img src="kumbull.png" alt="Kumbull">
-            <strong>Kumbull:</strong> Përmban vitaminë A, vitaminë C, fibra dhe kalium.
-        </li>
-        <li>
+            <div class="caption">
+                <ul>
+                    <li>Pasuri e lartë në vitaminë C.</li>
+                    <li>Burim i mirë i fibrave ushqimore.</li>
+                    <li>Përmban antioksidantë të quajtur flavonoidë.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="image">
             <img src="qershi.png" alt="Qershi">
-            <strong>Qershi:</strong> I pasur me vitaminë C, antioksidantë dhe fibra.
-        </li>
-    </ul>
+            <div class="caption">
+                <ul>
+                    <li>Pasuri e lartë në vitaminë C.</li>
+                    <li>Burim i mirë i fibrave ushqimore.</li>
+                    <li>Përmban antioksidantë të quajtur flavonoidë.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery2">
+        <div class="image">
+            <img src="portokall.png" alt="Portokall">
+            <div class="caption">
+                <ul>
+                    <li>Pasuri e lartë në vitaminë C.</li>
+                    <li>Burim i mirë i fibrave ushqimore.</li>
+                    <li>Përmban antioksidantë të quajtur flavonoidë.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="image">
+            <img src="banane.png" alt="Banane">
+            <div class="caption">
+                <ul>
+                    <li>Pasuri e lartë në vitaminë C.</li>
+                    <li>Burim i mirë i fibrave ushqimore.</li>
+                    <li>Përmban antioksidantë të quajtur flavonoidë.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </section>
 <hr>
 <section id="Perime">
+    <div class="gallery1">
 
-    <ul>
-        <li>
-            <img src="brokoli.jpg" alt="Brokoli">
-            <strong>Brokoli:</strong> Burim i mirë i vitaminës K, vitaminë C, fibra dhe folate.
-        </li>
-        <li>
-            <img src="karrot.jpg" alt="Karrot">
-            <strong>Karrot:</strong> Përmban beta-karoten, vitaminë A, fibra dhe kalium.
-        </li>
-        <li>
-            <img src="domate.jpg" alt="Domate">
-            <strong>Domate:</strong> I pasur me vitaminë C, vitaminë K, kalium dhe likopen (një antioksidant).
-        </li>
-        <li>
-            <img src="speca.jpg" alt="Speca">
-            <strong>Speca:</strong> Përmban vitaminë C, fibra dhe antioksidantë të tjerë.
-        </li>
-        <li>
-            <img src="avokado.jpg" alt="Avokado">
-            <strong>Avokado:</strong> Mbushur me yndyrna të shëndetshme, fibra, vitaminë K dhe kalium.
-        </li>
-    </ul>
+        <div class="image">
+            <img src="domate.png" alt="Domate">
+            <div class="caption">
+                <ul>
+                    <li>Pasuri e lartë në vitaminë C.</li>
+                    <li>Burim i mirë i fibrave ushqimore.</li>
+                    <li>Përmban antioksidantë të quajtur flavonoidë.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="image">
+            <img src="patate.png" alt="Patate">
+            <div class="caption">
+                <ul>
+                    <li>Pasuri e lartë në vitaminë C.</li>
+                    <li>Burim i mirë i fibrave ushqimore.</li>
+                    <li>Përmban antioksidantë të quajtur flavonoidë.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="brokoli.png" alt="Brokoli">
+            <div class="caption">
+                <ul>
+                    <li>Pasuri e lartë në vitaminë C.</li>
+                    <li>Burim i mirë i fibrave ushqimore.</li>
+                    <li>Përmban antioksidantë të quajtur flavonoidë.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="gallery2">
+        <div class="image">
+            <img src="speca.png" alt="Speca">
+            <div class="caption">
+                <ul>
+                    <li>Pasuri e lartë në vitaminë C.</li>
+                    <li>Burim i mirë i fibrave ushqimore.</li>
+                    <li>Përmban antioksidantë të quajtur flavonoidë.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="image">
+            <img src="avokato.png" alt="Avokado">
+            <div class="caption">
+                <ul>
+                    <li>Pasuri e lartë në vitaminë C.</li>
+                    <li>Burim i mirë i fibrave ushqimore.</li>
+                    <li>Përmban antioksidantë të quajtur flavonoidë.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
+<!-- Shto më shumë seksione për ditët e tjera -->
 
-
-    <!-- Shto më shumë seksione për ditët e tjera -->
 </main>
-<footer>
-    <p>Copyright © 2024 /Nutrition</p>
+<footer class="detailed-footer">
+    <div class="footer-info">
+        <h3>Contact Information</h3>
+        <p>Email: info@dietshop.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <p>Address: 123 Main Street, City, Country</p>
+    </div>
+    <div class="footer-social">
+        <h3>Follow Us</h3>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 DietShop. All Rights Reserved.</p>
+    </div>
 </footer>
 </body>
 </html>

@@ -13,14 +13,6 @@ main {
     align-items: center; /* Centers items horizontally */
 }
 
-footer {
-    background-color: #11395a;
-    color: seagreen;
-    padding: 1rem;
-    text-align: center;
-    margin-top: 1rem;
-}
-
 .the-content{
     text-align: center;
 }
@@ -43,6 +35,9 @@ footer {
 .container {
     padding: 10px 16px; /*largesia nga kufiri*/
     max-left: 300px;
+    padding: 10px 0;
+    border-radius:2px;
+    text-align: center;
 
 }
 
@@ -99,16 +94,58 @@ h2 {
 }
 
 ul {
-    list-style-type:none; /* nuk ka asnje simbol para listave */
+    list-style-type:none ; /* nuk ka asnje simbol para listave */
     padding: 10px;
 }
 
 li {
     margin-bottom: 10px;
+
 }
 
 img{
     width: 100px; /* Adjust the width as needed */
     height: auto; /* Automatically adjust height to maintain aspect ratio */
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5); /* Adds a subtle shadow */
+    opacity: 0.7; /* Adjust the opacity value (0 to 1) as needed */
+    position: relative;
+    display: inline-block;
+
+}
+
+.gallery1 {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: nowrap; /* Ensure images stay in one line */
+}
+
+.gallery2 {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: nowrap; /* Ensure images stay in one line */
+}
+
+.image {
+    text-align: center;
+}
+
+
+.image img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px; /* Add space between image and caption */
+}
+
+.caption {
+    font-size: 14px;
+    color: #555;
+    margin: 10px;
+}
+#femij{
+    color: #9f3d95;
+    text-decoration: none;
 }
