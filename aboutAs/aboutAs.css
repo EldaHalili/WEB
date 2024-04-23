@@ -3,35 +3,12 @@ body {
     font-family: 'Ubuntu Mono', monospace;
     margin: 0;
     padding: 0;
-    background-color: #6d5b5b;
+    min-height: 100vh;
+    background: #1f2c3a;
+    position: relative;
+    overflow-x: hidden;
 }
 
-header, footer {
-    text-align: center;
-    padding: 20px 0;
-}
-
-nav {
-    background-color: #6d5b5b;
-    color: white;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
 
 .about-content {
     max-width: 800px;
@@ -44,28 +21,17 @@ a {
 
 .about-content h2 {
     color: #6d5b5b;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 .about-content p {
     margin-bottom: 20px;
     color: #666;
-}
-
-.team-section {
     text-align: center;
-    padding: 50px 0;
 }
 
-.team-member {
-    display: inline-block;
-    margin: 0 20px;
-}
-
-.team-member img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-}
 
 /* Add CSS for testimonials carousel */
 .testimonial-carousel {
@@ -90,66 +56,7 @@ a {
     flex: 4 0 auto;
 }
 
-.carousel-buttons {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex; /* Ensure buttons are aligned horizontally */
-}
 
-.carousel-buttons button {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 5px 10px;
-    color: #6d5b5b;
-}
-
-.carousel-buttons button:first-child {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 5px; /* Adjust as needed */
-    z-index: 1; /* Ensure it's above the testimonials container */
-}
-
-.carousel-buttons button:last-child {
-    /*position: auto;*/
-    top: 5%;
-    transform: translateY(-50%);
-    right: 5px; /* Adjust as needed */
-    z-index: 3; /* Ensure it's above the testimonials container */
-}
-
-footer {
-    background-color: #615353;
-    color: white;
-    padding: 20px 0;
-}
-
-.footer-info, .footer-social {
-    display: inline-block;
-    text-align: left;
-    margin: 0 10px;
-}
-
-.footer-social ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-.footer-social ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-.btn1:hover {
-    background-color: #d8cbcb;
-}
-/* Stilizimi nga style1.css mbaron këtu */
-
-/* Stilizimi nga style2.css fillon këtu */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 * {
     margin: 0;
@@ -157,14 +64,7 @@ footer {
     box-sizing: border-box;
 }
 
-body {
-    min-height: 100vh;
-    min-height: 100svh;
-    background: #1f2c3a !important;
-    font-family: "Nunito", sans-serif;
-    position: relative;
-    overflow-x: hidden;
-}
+
 
 img {
     border-radius: 50%;
@@ -173,9 +73,6 @@ img {
     object-fit: cover;
     object-position: top;
 }
-
-
-
 
 
 header {
@@ -189,18 +86,21 @@ header {
     text-align: center;
     color: #ffffff;
 }
+
 header .header-content {
     width: min(37.5em, 90%);
     margin-top: 5em;
     position: relative;
     z-index: 10;
 }
+
 header .header-content span {
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 0.063rem;
     font-size: clamp(0.8rem, 0.7625rem + 0.1875vw, 0.95rem);
 }
+
 header .header-content h1 {
     font-size: clamp(1.5rem, 1.375rem + 0.625vw, 2rem);
     font-weight: 700;
@@ -229,18 +129,22 @@ section {
     text-align: center;
     position: relative;
 }
+
 section .card h2 {
     color: #ffffff; /* Zgjidh ngjyrën që dëshiron për shkrim */
 }
-/* Stilizimi nga style2.css mbaron këtu */
+
+
 .about-content.wide {
     max-width: 2000px; /* Ose madhësia që dëshiron */
     margin: 0 auto; /* Për të qendruar në qendër */
 }
+
 .testimonial-heading {
     color: #fff; /* Ndryshon ngjyrën e fjalës Testimonials në bardhë */
     text-align: center; /* Zhvendos tekstin në mes */
 }
+
 .testimonial p {
     color: #615353; /* Ngjyra që dëshironi për tekstin e komentit */
 }

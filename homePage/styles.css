@@ -15,15 +15,16 @@
     text-align: center;
     font-size: 46px;
     font-family: 'Ubuntu Mono', monospace;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #top1 {
     text-align: center;
     color: black;
-    font-size: 12px;
+    font-size: 15px;
     font-family: 'Ubuntu Mono', monospace;
-    margin-bottom: 20px;
+
+    margin-bottom: 5px;
 }
 .container {
     --rX: 0;
@@ -125,105 +126,6 @@
     text-align: center;
 }
 
-/* Navbar styling */
-#navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #6d5b5b;
-    background-color: #837272;
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-/* Navbar links */
-#navcontent {
-    list-style: none;
-    padding: 0;
-}
-
-#navcontent li {
-    display: inline;
-    margin-right: 20px;
-}
-
-#navcontent li:last-child {
-    margin-right: 0;
-}
-
-#navcontent li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-#navcontent li a:hover {
-    text-decoration: underline;
-}
-
-/* Login button styling */
-.btn1 {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.btn1:hover {
-    background-color: #555;
-}
-
-/* Footer styling */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 50px 0;
-}
-
-.footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.detailed-footer {
-    background-color: #f8f8f8;
-    color: #333;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.footer-info,
-.footer-social {
-    margin-bottom: 20px;
-}
-
-.footer-info p {
-    margin: 5px 0;
-}
-
-.footer-social ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-social ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.footer-bottom {
-    margin-top: 20px;
-    font-size: 14px;
-}
 
 /* Changing the color of placeholder */
 ::placeholder {
@@ -377,6 +279,8 @@ h1+p {
   color: hsl(0, 100%, 1%);
   font-size: 1.6rem;
 }
+
+
 
 
 /* edhe kjooooo0000*/

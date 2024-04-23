@@ -13,14 +13,6 @@ main {
     align-items: center; /* Centers items horizontally */
 }
 
-footer {
-    background-color: #11395a;
-    color: seagreen;
-    padding: 1rem;
-    text-align: center;
-    margin-top: 1rem;
-}
-
 .the-content{
     text-align: center;
 }
