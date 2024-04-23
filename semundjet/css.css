@@ -1,3 +1,4 @@
+
 .collapse {
   overflow: hidden;
   transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -14,13 +15,14 @@
   overflow: hidden; /* Hide overflow content */
 }
 
+
 .box {
   flex: 1;
   padding: 10px;
   text-align: center;
   border-right: 1px solid transparent; /* Transparent right border */
   margin-right: 10px; /* Add space between boxes */
-  box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.14), inset 0px 3px 1px -2px rgba(0, 0, 0, 0.2), inset 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0px 2px 2px 0px rgba(177, 126, 126, 0.14), inset 0px 3px 1px -2px rgba(0, 0, 0, 0.2), inset 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
 /* Adjust as needed */
@@ -41,11 +43,11 @@
 
 
 .accordion {
-  --background: #f3f3f3;
+  --background: #f3f3f39d;
   --border-radius: 12px;
   border-radius: var(--border-radius);
   background: var(--background);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 2px 6px rgba(205, 22, 22, 0.075);
   border: 1px solid #d9d9d9;
   width: 80%; /* Added width to center the accordion */
   margin: auto; /* Added margin auto to center the accordion */
