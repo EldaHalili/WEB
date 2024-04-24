@@ -8,24 +8,44 @@
     padding: 0;
     box-sizing: border-box;
 }
+.text-container .background-image{
 
+        /* Vendosni adresën e imazhit tuaj si background */
+        background-size: cover; /* Përshtat madhësinë e imazhit për të mbuluar plotësisht kontekstin */
+        background-position: center; /* Vendos pozicionin e qendrës së imazhit */
+        opacity: 0.5; /* Përcakto transparencën e imazhit */
+        padding: 20px; /* Përcakto transparencën e imazhit */
+        background-image: url('foto.jpg');
+
+}
 /*!* Header Styling *!*/
+
+
 #top {
-    color: rgb(16, 15, 15);
+    color: rgb(7, 0, 0);
     text-align: center;
-    font-size: 46px;
-    font-family: 'Ubuntu Mono', monospace;
-    margin-bottom: 10px;
+    font-size: 100px; /* Zmadho madhësinë e shkronjave */
+    font-family: "Bradley Hand ITC", cursive;
+    margin-top: 200px; /* Rrit largësinë e marginës poshtë */
+    letter-spacing: 1px; /* Shto hapësirë ndarëse mes shkronjave */
+    text-shadow: 0px 10px 10px rgba(7, 5, 3, 8);
+
 }
 
 #top1 {
     text-align: center;
-    color: black;
-    font-size: 15px;
+    color: #070000; /* Ndërro ngjyrën e tekstit në një ton më të errët të zi */
+    font-size: 18px; /* Zmadho madhësinë e tekstit */
     font-family: 'Ubuntu Mono', monospace;
-
-    margin-bottom: 5px;
+    margin-bottom: 200px; /* Rrit largësinë e marginës poshtë */
+    line-height: 1.6; /* Rrit lartësinë e rreshtit për të bërë leximin më të lehtë */
+    text-transform: uppercase; /* Konverto tekstin në shkronja të mëdha */
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, .8);
 }
+
+
+
+
 .container {
     --rX: 0;
     --rY: 0;
@@ -125,6 +145,13 @@
     font-size: 2rem;
     text-align: center;
 }
+#to {
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
 
 
 /* Changing the color of placeholder */
@@ -307,6 +334,12 @@ h1+p {
     text-decoration: none;
     display: block;
 }
+.header-inner {
+    text-align: center;
+    color: #615353;
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, .8);
+}
+
 
 
 
