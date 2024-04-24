@@ -44,7 +44,6 @@ body {
 }
 
 .testimonials-container {
-    margin-bottom: 10px;
     display: flex;
     transition: transform 0.5s ease;
     position: relative;
@@ -56,7 +55,7 @@ body {
     border-radius: 50px;
     padding: 25px;
     margin-right: 20px;
-    /*flex: 4 0 auto;*/
+    flex: 4 0 auto;
 }
 
 
@@ -150,18 +149,3 @@ section .card h2 {
 .testimonial p {
     color: #615353; /* Ngjyra që dëshironi për tekstin e komentit */
 }
-/*.carousel-buttons {*/
-/*    font-size: 1.5em; !* Increase font size for the buttons *!*/
-/*    color: #fff; !* Set color *!*/
-/*    background-color: #000; !* Set background color *!*/
-/*    border: none; !* Remove border *!*/
-/*    padding: 5px 10px; !* Adjust padding *!*/
-/*    border-radius: 5px; !* Add border radius for rounded corners *!*/
-/*    cursor: pointer; !* Set cursor to pointer *!*/
-/*    !*position: fixed;*!*/
-/*    justify-content: center;*/
-/*    display: flex;*/
-/*}*/
-/*#prevBtn{*/
-/*    position:;*/
-/*}*/
