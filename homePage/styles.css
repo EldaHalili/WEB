@@ -290,13 +290,13 @@ h1 {
     height: calc(100% - 4rem);
 }
 
-.abs-site-link {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    color: hsl(0, 7%, 48%);
-    font-size: 1.6rem;
-}
+/*.abs-site-link {*/
+/*    position: fixed;*/
+/*    bottom: 20px;*/
+/*    left: 20px;*/
+/*    color: hsl(0, 7%, 48%);*/
+/*    font-size: 1.6rem;*/
+/*}*/
 
 .dropdown-content {
     display: none;
