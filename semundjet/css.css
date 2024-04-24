@@ -105,6 +105,12 @@ body{
   transform: rotateX(180deg);
   opacity: 1;
 }
+.detailed-footer {
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 40px 0;
+  text-align: center;
+}
 .accordion .card__title .icon {
   width: 28px;
   height: 28px;
@@ -148,4 +154,8 @@ a {
 a,
 [data-toggle] {
   cursor: pointer;
+}
+footer {
+  display: block;
+  unicode-bidi: isolate;
 }
