@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
 
             // Get the href attribute of the button's parent anchor tag
-            var href = button.getAttribute('border.html');
+            var href = button.getAttribute('html');
 
             // Navigate to the linked page
             window.location.href = href;
