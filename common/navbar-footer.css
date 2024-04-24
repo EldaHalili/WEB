@@ -8,6 +8,7 @@
     padding: 10px 50px;
     border-radius: 10px;
     margin-top: 2px;
+
 }
 
 /* Navbar links */
@@ -46,17 +47,21 @@
     cursor: pointer;
     font-weight: bold;
     font-size: 16px;
+
 }
 
 .btn1:hover {
-    background-color: #555;
+    background-color: #f4f1f1;
+    color: #070000;
+
 }
 
 /* Footer styling */
 footer {
     background-color: #333;
-    color: #fff;
+    color: #b68d8d;
     padding: 50px 0;
+
 }
 
 .footer-container {
