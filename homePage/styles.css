@@ -1,15 +1,5 @@
-style.css
 
-/* CSS Reset */
-
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.text-container .background-image{
+.text-container .background-image {
 
     /* Vendosni adresën e imazhit tuaj si background */
     background-size: cover; /* Përshtat madhësinë e imazhit për të mbuluar plotësisht kontekstin */
@@ -19,6 +9,7 @@ style.css
     background-image: url('foto.jpg');
 
 }
+
 /*Header Styling*/
 
 
@@ -29,7 +20,7 @@ style.css
     font-family: "Bradley Hand ITC", cursive;
     margin-top: 200px; /* Rrit largësinë e marginës poshtë */
     letter-spacing: 1px; /* Shto hapësirë ndarëse mes shkronjave */
-    text-shadow: 0px 10px 10px rgba(7, 5, 3, 8);
+    text-shadow: 0 10px 10px rgba(7, 5, 3, 8);
 
 }
 
@@ -41,183 +32,7 @@ style.css
     margin-bottom: 200px; /* Rrit largësinë e marginës poshtë */
     line-height: 1.6; /* Rrit lartësinë e rreshtit për të bërë leximin më të lehtë */
     text-transform: uppercase; /* Konverto tekstin në shkronja të mëdha */
-    text-shadow: 0px 10px 10px rgba(0, 0, 0, .8);
-}
-
-
-
-
-.container {
-    --rX: 0;
-    --rY: 0;
-    --bX: 50%;
-    --bY: 80%;
-
-    width: calc(30% - 40px); /* Adjust the width here */
-    max-width: 300px; /* Add a max-width to prevent excessive stretching */
-    height: 30rem; /* Adjust the height if needed */
-    border: 1px solid var(--background-color);
-    border-radius: 1.6rem;
-    padding: 2rem; /* Adjust the padding if needed */
-
-    display: flex;
-    align-items: flex-end;
-
-    position: relative;
-    transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
-
-    background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("https://i.pinimg.com/originals/6e/25/6a/6e256ae60527afd05583d17676a622e5.jpg");
-    background-position: var(--bX) var(--bY);
-    background-size: 40rem auto;
-    box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
-
-    transition: transform .6s 1s;
-}
-
-.wrap {
-    margin: 2rem; /* Adjust margin to create space between cards */
-    flex: 1; /* Make each card take up equal space */
-    max-width: 300px; /* Add a max-width to prevent excessive stretching */
-}
-
-@media screen and (max-width: 768px) {
-    .wrap {
-        width: calc(50% - 40px); /* Adjust width for smaller screens */
-    }
-}
-
-
-
-.container--1 h2,
-.container--2 h2,
-.container--3 h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-    text-align: center; /* Center align the heading */
-}
-
-.container--1 p,
-.container--2 p,
-.container--3 p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    color: #b68d8d;
-    text-align: center; /* Center align the paragraph */
-}
-
-.container--1 button,
-.container--2 button,
-.container--3 button {
-    background-color: #873232;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    display: block;
-    margin: auto; /* Center the button */
-}
-
-.container--1,
-.container--2,
-.container--3 {
-    width: calc(30% - 40px);
-    background-color: #f5f5f5;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column; /* Arrange children vertically */
-    align-items: center; /* Center align children */
-}
-
-
-.subscription-box .btn:hover {
-        background-color: #873232;
- }
-
-#row1 {
-    color: black;
-    font-weight: bold;
-    font-size: 2rem;
-    text-align: center;
-}
-#to {
-    color: black;
-    font-weight: bold;
-    font-size: 2rem;
-    text-align: center;
-}
-
-
-
-/* Changing the color of placeholder */
-::placeholder {
-    color: gray;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .subscription-box {
-        width: calc(50% - 40px);
-    }
-}
-
-
-
-
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    --background-color: hsl(180, 8%, 44%);
-
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-    min-height: 100vh;
-    padding: 2rem;
-
-    color: hsla(0, 0%, 0%, .6);
-    background: var(--background-color);
-    text-align: center;
-}
-
-h1 {
-    font-size: 3.2rem;
-    padding-top: 2rem;
-}
-
-h1+p {
-    font-size: 1.8rem;
-    padding: 2rem 0 3rem;
-}
-
-.main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.wrap {
-    margin: 2rem;
-
-    transform-style: preserve-3d;
-    transform: perspective(100rem);
-    display: inline-block;
-    cursor: pointer;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, .8);
 }
 
 .container {
@@ -281,6 +96,181 @@ h1+p {
     transition: none;
 }
 
+.container--1 h2,
+.container--2 h2,
+.container--3 h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #333;
+}
+
+.container--1 p,
+.container--2 p,
+.container--3 p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #b68d8d;
+    text-align: center; /* Center align the paragraph */
+}
+
+.container--1 button,
+.container--2 button,
+.container--3 button {
+    background-color: #873232;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    margin: auto; /* Center the button */
+}
+
+.container--1,
+.container--2,
+.container--3 {
+    width: calc(30% - 40px);
+    background-color: #f5f5f5;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+}
+
+
+.wrap {
+    margin: 2rem; /* Adjust margin to create space between cards */
+    flex: 1; /* Make each card take up equal space */
+    max-width: 300px; /* Add a max-width to prevent excessive stretching */
+}
+
+@media screen and (max-width: 768px) {
+    .wrap {
+        width: calc(50% - 40px); /* Adjust width for smaller screens */
+    }
+}
+
+
+.container--1 h2,
+.container--2 h2,
+.container--3 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center; /* Center align the heading */
+}
+
+.container--1 p,
+.container--2 p,
+.container--3 p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #b68d8d;
+    text-align: center; /* Center align the paragraph */
+}
+
+
+#row1 {
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/* Changing the color of placeholder */
+::placeholder {
+    color: gray;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .subscription-box {
+        width: calc(50% - 40px);
+    }
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    --background-color: hsl(180, 8%, 44%);
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    min-height: 100vh;
+    padding: 2rem;
+
+    color: hsla(0, 0%, 0%, .6);
+    background: var(--background-color);
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.2rem;
+    padding-top: 2rem;
+}
+
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap {
+    margin: 2rem;
+
+    transform-style: preserve-3d;
+    transform: perspective(100rem);
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.container::before,
+.container::after {
+    content: "";
+
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #fff;
+
+    position: absolute;
+    z-index: 2;
+
+    opacity: .3;
+    transition: .3s;
+}
+
+.container::before {
+    top: 2rem;
+    right: 2rem;
+
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.container::after {
+    bottom: 2rem;
+    left: 2rem;
+
+    border-top-width: 0;
+    border-right-width: 0;
+}
+
+.container--active {
+    transition: none;
+}
+
 .container--2 {
     filter: hue-rotate(80deg) saturate(140%);
 }
@@ -307,6 +297,7 @@ h1+p {
     color: hsl(0, 7%, 48%);
     font-size: 1.6rem;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -316,7 +307,7 @@ h1+p {
     background-color: #837272;
     width: 150px; /* Shkurton madhësinë e dropdown menu-së */
     padding: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     transition: opacity 0.4s, visibility 0.4s;
     opacity: 0;
     visibility: hidden;
@@ -335,8 +326,9 @@ h1+p {
     text-decoration: none;
     display: block;
 }
+
 .header-inner {
     text-align: center;
     color: #615353;
-    text-shadow: 0px 10px 10px rgba(0, 0, 0, .8);
+    text-shadow: 0 10px 10px rgba(0, 0, 0, .8);
 }
