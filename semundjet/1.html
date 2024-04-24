@@ -24,45 +24,86 @@
   <!-- Your HTML content goes here -->
   <section class="section_accordion">
     <h1>Dieta ne baze te semundjeve</h1> <!--<br><small>Cfare duhet te bejme dhe cfare jo?</small> -->
+<!-- e para-->
+    <section class="section_accordion">
+      <div class="accordion">
+        <div class="card is-active">
+          <a class="card__title is-active" data-toggle="collapse" href="#content1">
+            Diabeti
+            <svg class="icon icon-keyboard_arrow_down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+            </svg>
+          </a>
+    
+          <div id="content1" class="collapse is-active" data-parent=".accordion">
+            <div class="card__content">
+              <div class="container">
+                <div class="box">
+                  <span>🍽️</span>
+                  <h3>Regjimi ushqimor</h3>
+                  <p>Konsumoni më shumë fruta, perime, dhe drithëra të plota.
+                     Kufizoni sheqerin dhe kripën.</p>
+                </div>
+                <div class="box">
+                  <span>🚶‍♀️</span>
+                  <h3>Aktiviteti fizik</h3>
+                  <p>Bëni ushtrime të rregullta si ecja, noti, apo ushtrime
+                     të lehta për të mbajtur trupin aktive.</p>
+                </div>
+                <div class="box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="#FF6347" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V8h2v4zm4 4h-2v-2h2v2zm0-4h-2V8h2v4z"/>
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                  </svg>
+                  <h3>Këshilla te përgjithshme</h3>
+                  <p> Kontrolloni nivelet e sheqerit në gjak dhe tensionin e gjakut rregullisht. 
+                    Konsultohuni rregullisht me mjekun për monitorimin dhe menaxhimin e gjendjes suaj.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+      
 
+  <!-- e dyta -->
+  <section class="section_accordion">
     <div class="accordion">
       <div class="card is-active">
-        <a class="card__title is-active" data-toggle="collapse" href="#content1">
-          Hipertensioni
+        <a class="card__title is-active" data-toggle="collapse" href="#content2">
+          Hipertensioni 
+          <svg class="icon icon-keyboard_arrow_down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+          </svg>
         </a>
-
-        <div id="content1" class="collapse is-active" data-parent=".accordion">
+  
+        <div id="content2" class="collapse is-active" data-parent=".accordion">
           <div class="card__content">
-            
             <div class="container">
               <div class="box">
-                <svg class="icon icon-fork-and-knife" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path d="M17.37 6.29l3.95-3.95c.39-.39.39-1.02 0-1.41l-.71-.71c-.39-.39-1.02-.39-1.41 0l-3.95 3.95L8.44 4.5 5.56 1.62c-.39-.39-1.02-.39-1.41 0l-.71.71c-.39.39-.39 1.02 0 1.41l2.88 2.88-3.95 3.95c-.39.39-.39 1.02 0 1.41l.71.71c.39.39 1.02.39 1.41 0l3.95-3.95 2.88 2.88c.39.39 1.02.39 1.41 0l.71-.71c.39-.39.39-1.02 0-1.41L10.8 6.29l3.95-3.95c.39-.39.39-1.02 0-1.41l-.71-.71c-.39-.39-1.02-.39-1.41 0l-3.95 3.95-2.88-2.88c-.39-.39-1.02-.39-1.41 0l-.71.71c-.39.39-.39 1.02 0 1.41l2.88 2.88L4.5 13.56l-3.88 9.29c-.1.23-.1.48 0 .7.2.47.68.75 1.15.75h16c.47 0 .95-.28 1.15-.75.1-.23.1-.48 0-.7L17.37 6.29z"/>
-                </svg>   
+                <span>🍽️</span>
                 <h3>Regjimi ushqimor</h3>
-                <p>Preferoni një dietë të pasur me fruta, perime, 
-                  drithëra të tëra, produkte të qumështit të 
-                  ulët në yndyrë, dhe kufizoni konsumin e kripës.</p>
+                <p>Konsumoni një dietë të pasur me fruta,
+                   perime, dhe drithëra të plota. Kufizoni sasinë 
+                   e kripës dhe sheqerit në dietën tuaj.</p>
               </div>
               <div class="box">
-                <svg class="icon icon-chef-hat" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                  <path d="M12 2l9 6-2 1.34v11.32C19 22.99 17.01 24 14.75 24 12.5 24 11 22.5 11 20.66V13.34L9 12zm-1 0 2 1v7.34l-2 1V2zm-6 7.5L5.5 9 12 5l6.5 4-1.5 1.5L12 8.99 5.5 11zm3-6L11 5 7.5 2.5l-2 2L7 7l-1 1v2.5L2 14c-1 1 0 2 1 2l4-4 4 4 4-4 4 4 1-1c1-1 2-3 1-4l-3-3z"/>
-                </svg>
-              
+                <span>🚶‍♀️</span>
                 <h3>Aktiviteti fizik</h3>
-                <p>Përfshini aktivitete të rregullta të ushtrimeve aerobike si ecje, 
-                  not, apo ecje me bicikletë, dhe bëni ushtrime të forta që 
-                  ndihmojnë në forcimin e muskujve dhe zemrës.</p>
+                <p>Bëni aktivitete fizike të rregullta si ecja, noti, 
+                  apo ushtrime të lehta për të mbajtur trupin aktive.</p>
               </div>
               <div class="box">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                  <path fill="black" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V8h2v4zm4 4h-2v-2h2v2zm0-4h-2V8h2v4z"/>
+                  <path fill="#FF6347" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V8h2v4zm4 4h-2v-2h2v2zm0-4h-2V8h2v4z"/>
                   <path d="M0 0h24v24H0z" fill="none"/>
                 </svg>
-                
                 <h3>Këshilla te përgjithshme</h3>
-                <p>Monitoroni tensionin e gjakut, mbani një peshë të shëndetshme,
-                   ulni konsumin e alkoolit dhe duhanit, dhe merrni terapinë e rekomanduar nga mjeku.</p>
+                <p> Monitoroni tensionin e gjakut rregullisht.
+                  Kufizojini konsumin e alkoolit dhe duhanit. 
+                  Menaxhoni stresin dhe merrni kohë për relaksim dhe gjumë të mirë.</p>
               </div>
             </div>
           </div>
@@ -70,44 +111,8 @@
       </div>
     </div>
   </section>
-
-  <!-- e dyta -->
-<section class="section_accordion">
-  <div class="accordion">
-    <div class="card is-active">
-      <a class="card__title is-active" data-toggle="collapse" href="#content2">
-        Diabeti
-        <svg class="icon icon-keyboard_arrow_down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-        </svg>
-      </a>
-
-      <div id="content2" class="collapse is-active" data-parent=".accordion">
-        <div class="card__content">
-          <div class="container">
-            <div class="box">
-              <h3>Regjimi ushqimor</h3>
-              <p>Preferoni ushqime me indeks glikemik të ulët si fruta,
-                 perime, grurë të plotë, proteina të pasura dhe yndyra të shëndetshme.</p>
-            </div>
-            <div class="box">
-              <span>🚶‍♀️</span>
-              <h3>Aktiviteti fizik</h3>
-              <p> Kryejini ushtrime aerobike të rregullta si ecje, forconi muskujt
-                 dhe përqendrohuni në kontrollin e niveleve të sheqerit në gjak.</p>
-            </div>
-            <div class="box">
-              <h3>Këshilla të përgjithshme</h3>
-              <p>Monitoroni nivelet e sheqerit në gjak, ruani një dietë të rregullt 
-                dhe merrni trajtim mjekësor sipas nevojës.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+  
+    
 <!-- e treta -->
 <section class="section_accordion">
   <div class="accordion">
@@ -122,16 +127,22 @@
       <div id="content3" class="collapse is-active" data-parent=".accordion">
         <div class="card__content">
           <div class="container">
-            <div class="box">
+              <div class="box">
+              <span>🍽️</span>
               <h3>Regjimi ushqimor</h3>
               <p>Konsumoni një dietë të pasur me fruta, perime, grurë të plotë,
                  peshk dhe yndyra të shëndetshme si vaj ulliri.</p>
             </div>
             <div class="box">
+              <span>🚶‍♀️</span>
               <h3>Aktiviteti fizik</h3>
               <p>Kryejini aktivitete të rregullta fizike si ecje shpejtë ose jogging, ushtrime aerobike.</p>
             </div>
             <div class="box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#FF6347" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V8h2v4zm4 4h-2v-2h2v2zm0-4h-2V8h2v4z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
               <h3>Këshilla te përgjithshme</h3>
               <p>Kontrolloni peshën tuaj, monitoroni tensionin e gjakut,
                  mos duhet të konsumoni duhan ose alkool në sasi të mëdha.</p>
@@ -158,6 +169,7 @@
         <div class="card__content">
           <div class="container">
             <div class="box">
+              <span>🍽️</span>
               <h3>Regjimi ushqimor</h3>
               <p>Ushqime të pasura me antioksidantë si frutat dhe perimet, 
                 peshk i yndyrshëm të shëndetshëm, vajra të mirë si vaj ulliri.</p>
@@ -198,6 +210,7 @@
           <div class="card__content">
             <div class="container">
               <div class="box">
+                <span>🍽️</span>
                 <h3>Regjimi ushqimor</h3>
                 <p> Ushqimi i pasur ne kalcium si qumesht, kos, 
                   djathe, arra, laktoza, dhe perime te gjelbra.</p>
@@ -238,6 +251,7 @@
         <div class="card__content">
           <div class="container">
             <div class="box">
+              <span>🍽️</span>
               <h3>Regjimi ushqimor</h3>
               <p>Frutat, perimet, peshku, arra, dhe ushqime te pasura 
                 me antioksidante si qepa, hudhra, dhe gjysme.</p>
@@ -278,6 +292,7 @@
           <div class="card__content">
             <div class="container">
               <div class="box">
+                <span>🍽️</span>
                 <h3>Regjimi ushqimor</h3>
                 <p>Ushqimi i pasur me acid hialurik si gjeli i pulës, gjeli i pecetave,
                    peshku i yndyrshëm, dhe kerpudha.</p>
@@ -318,6 +333,7 @@
         <div class="card__content">
           <div class="container">
             <div class="box">
+              <span>🍽️</span>
               <h3>Regjimi ushqimor</h3>
               <p>Ushqimi i pasur me magnez dhe acid folik si arrat, 
                 bajamet, avokadot, dhe bananet.</p>
@@ -358,6 +374,7 @@
           <div class="card__content">
             <div class="container">
               <div class="box">
+                <span>🍽️</span>
                 <h3>Regjimi ushqimor</h3>
                 <p> Ushqimi i pasur me acide yndyrore të shëndetshme si peshku, avokado, dhe vaj ulliri. 
                   Konsumoni edhe ushqime me kalcium për shëndetin e kockave.</p>
@@ -401,6 +418,7 @@
         <div class="card__content">
           <div class="container">
             <div class="box">
+              <span>🍽️</span>
               <h3>Regjimi ushqimor</h3>
               <p>Përfshini ushqime të pasura me nutrientë në dietën tuaj, 
                 duke përfshirë fruta, perime, proteina, 
@@ -429,8 +447,7 @@
   </div>
 </section>
   <script src="js.js"></script>
-
 </body>
-<footer></footer>
+<footer>
+</footer>
 </html>
-
