@@ -22,14 +22,16 @@ body {
 .about-content h2 {
     color: #6d5b5b;
     text-align: center;
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: "Times New Roman", sans-serif;
 }
 
 .about-content p {
     margin-bottom: 20px;
     color: #666;
     text-align: center;
+    font-size: 18px;
 }
 
 
@@ -42,6 +44,7 @@ body {
 }
 
 .testimonials-container {
+    margin-bottom: 10px;
     display: flex;
     transition: transform 0.5s ease;
     position: relative;
@@ -53,7 +56,7 @@ body {
     border-radius: 50px;
     padding: 25px;
     margin-right: 20px;
-    flex: 4 0 auto;
+    /*flex: 4 0 auto;*/
 }
 
 
@@ -63,7 +66,6 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
 
 
 img {
@@ -148,3 +150,18 @@ section .card h2 {
 .testimonial p {
     color: #615353; /* Ngjyra që dëshironi për tekstin e komentit */
 }
+/*.carousel-buttons {*/
+/*    font-size: 1.5em; !* Increase font size for the buttons *!*/
+/*    color: #fff; !* Set color *!*/
+/*    background-color: #000; !* Set background color *!*/
+/*    border: none; !* Remove border *!*/
+/*    padding: 5px 10px; !* Adjust padding *!*/
+/*    border-radius: 5px; !* Add border radius for rounded corners *!*/
+/*    cursor: pointer; !* Set cursor to pointer *!*/
+/*    !*position: fixed;*!*/
+/*    justify-content: center;*/
+/*    display: flex;*/
+/*}*/
+/*#prevBtn{*/
+/*    position:;*/
+/*}*/
