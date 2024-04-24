@@ -1,52 +1,44 @@
-// Get the modal for forgotten password
-var forgottenModal = document.getElementById("forgotten");
+// Get the modal element
+var modal = document.getElementById('forgotten');
 
-// Get the link for Forgotten Password
-var forgotPasswordLink = document.getElementById("forgot-password");
+// Get the button that opens the modal
+var forgotPasswordBtn = document.getElementById('forgot-password');
 
-// Get the submit button inside the forgotten password modal
-var submitButton = document.getElementById("submit");
+// Get the <span> element that closes the modal
+var closeBtn = document.getElementsByClassName("close")[0];
 
-// Get the success modal
-var successModal = document.getElementById("success-modal");
-
-// Function to open the modal when the link is clicked
-forgotPasswordLink.onclick = function() {
-    forgottenModal.style.display = "block";
+// When the user clicks on the button, open the modal
+forgotPasswordBtn.onclick = function() {
+    modal.style.display = "block";
 }
 
-// Function to close the modal when the close button is clicked
-forgottenModal.querySelector(".close").onclick = function() {
-    forgottenModal.style.display = "none";
+// When the user clicks on <span> (x), close the modal
+closeBtn.onclick = function() {
+    modal.style.display = "none";
 }
 
-// Function to close the modal when clicking outside of it
+// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == forgottenModal) {
-        forgottenModal.style.display = "none";
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
 }
 
-// Function to handle submission of the forgotten password form
-submitButton.onclick = function() {
-    // Check if code input is empty
-    var codeInput = document.getElementById("code-input").value;
-    if (codeInput.trim() === "") {
-        alert("Please enter the code sent to your email.");
-        return false;
-    }
-    // Check if new password fields match
-    var newPassword = document.getElementById("new-password").value;
-    var confirmPassword = document.getElementById("confirm-password").value;
+// Function to validate and submit the form
+function submitForm() {
+    var code = document.querySelector('#forgotten input[type="text"]').value;
+    var newPassword = document.getElementById('new-password').value;
+    var confirmPassword = document.getElementById('confirm-password').value;
+
+    // You can add your validation logic here
+
+    // Example: Check if both passwords match
     if (newPassword !== confirmPassword) {
-        alert("New password fields do not match.");
+        alert("Passwords do not match.");
         return false;
     }
-    // Show the success modal if everything is valid
-    successModal.style.display = "block";
-}
 
-// Function to close the success modal when the close button is clicked
-successModal.querySelector(".close").onclick = function() {
-    successModal.style.display = "none";
+    // If all validations pass, you can submit the form
+    // Your form submission code here
+    // Example: document.getElementById("yourFormId").submit();
 }
