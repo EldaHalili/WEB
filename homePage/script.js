@@ -110,5 +110,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-
+document.getElementById('viewMoreBtn').addEventListener('click', function() {
+    fetch('../Nutricion/border.html')
+        .then(response => response.text())
+        .then(html => {
+            document.body.innerHTML = html; // Or append to a specific part of the page
+        })
+        .catch(error => console.error('Error loading the page: ', error));
+});
