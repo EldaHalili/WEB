@@ -21,7 +21,7 @@ hr {
 /* Container styles */
 #ContactUs {
     max-width: 600px;
-    margin: 10px auto;
+    margin: 60px auto;
     padding: 20px;
     background-color: #d8cbcb;
     border-radius: 8px;
@@ -136,7 +136,6 @@ input[type="reset"]:hover {
 }
 
 
-
 :root {
     --yellow: #ffc107; /* Define your desired yellow color */
     --yellow-t: #ffe082; /* Define a lighter shade of yellow for hover effect */
@@ -150,7 +149,7 @@ input[type="reset"]:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 
 .rating__display {
