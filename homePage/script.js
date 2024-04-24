@@ -1,4 +1,3 @@
-
 class parallaxTiltEffect {
 
     constructor({element, tiltEffect}) {
@@ -92,23 +91,23 @@ const wrap3 = new parallaxTiltEffect({
 
 //edhe kjoooo
 // For the "Nutrition Plan" button
-document.addEventListener('DOMContentLoaded', function() {
-    // Get all elements with the class "btn" (which are the "View More" buttons)
-    var buttons = document.querySelectorAll('.btn');
+// script.js
 
-    // Add click event listeners to all "View More" buttons
-    buttons.forEach(function(button) {
-        button.addEventListener('click', function(event) {
-            // Prevent the default behavior of the button (e.g., form submission)
-            event.preventDefault();
-
-            // Get the href attribute of the button's parent anchor tag
-            var href = button.getAttribute('html');
-
-            // Navigate to the linked page
-            window.location.href = href;
-        });
-    });
+// Add event listeners to each "View More" button
+// For the "Nutrition Plan" button
+document.getElementById('viewMoreBtn1').addEventListener('click', function () {
+    window.location.href = 'border.html'; // Replace 'border.html' with the URL of the page you want to navigate to for the Nutrition Plan
 });
+
+// For the "Diet Plan" button
+// document.getElementById('viewMoreBtn2').addEventListener('click', function () {
+//     window.location.href = '../semundjet/1.html'; // Replace '../semundjet/1.html' with the correct URL of the page for the Diet Plan
+// });
+
+// For the "Catering Plan" button
+document.getElementById('viewMoreBtn3').addEventListener('click', function () {
+    window.location.href = 'border.html'; // Replace 'border.html' with the URL of the page you want to navigate to for the Catering Plan
+});
+
 
 
