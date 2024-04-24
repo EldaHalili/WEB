@@ -1,5 +1,9 @@
 body{
-  background-color: #f4eeee;
+  background-color: hwb(0 96% 2%);
+  /*background-image: url(jjj.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;*/
 }
 .collapse {
   overflow: hidden;
@@ -16,7 +20,10 @@ body{
   border-radius: 4px;
   overflow: hidden; /* Hide overflow content */
 }
-
+.hr{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 
 .box {
   flex: 1;
@@ -93,6 +100,7 @@ body{
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
+  font-family: sans-serif;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -132,8 +140,9 @@ html {
 h1 {
   margin-bottom: 3rem;
   font-size: 2rem;
-  font-weight: 400;
-  color: #504b4b;
+  font-weight: bold;
+  
+  color: #443737;
   padding: 10px 20px 20px;;
   text-align: center; /* Centering the title */
   border-bottom: 1px solid #ccc; /* Thin border at the bottom of the header */
@@ -148,4 +157,49 @@ a {
 a,
 [data-toggle] {
   cursor: pointer;
+}
+footer {
+  background-color: #333;
+  color: #b68d8d;
+  padding: 50px 0;
+
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.detailed-footer {
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-info,
+.footer-social {
+  margin-bottom: 20px;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-social ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
 }
