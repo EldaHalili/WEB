@@ -111,6 +111,54 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the "View More" button for nutrition by its ID
+    var nutritionButton = document.getElementById('viewMoreNutritionBtn');
+
+    // Add a click event listener to the nutrition button
+    nutritionButton.addEventListener('click', function(event) {
+        // Prevent the default behavior of the button (e.g., form submission)
+        event.preventDefault();
+
+        // Define the URL of the nutrition page
+        var nutritionUrl = 'border.html';
+
+        // Navigate to the nutrition page
+        window.location.href = nutritionUrl;
+    });
+
+    // Get the "View More" button for another page by its ID
+    var anotherButton = document.getElementById('viewMoreAnotherBtn');
+
+    // Add a click event listener to the another button
+    anotherButton.addEventListener('click', function(event) {
+        // Prevent the default behavior of the button (e.g., form submission)
+        event.preventDefault();
+
+        // Define the URL of the another page
+        var anotherUrl = 'file:///C:/Users/DELL/Desktop/website/WEB-1/homePage/index.html';
+
+        // Navigate to the another page
+        window.location.href = anotherUrl;
+    });
+
+    // Get the "View More" button for yet another page by its ID
+    var yetAnotherButton = document.getElementById('viewMoreYetAnotherBtn');
+
+    // Add a click event listener to the yet another button
+    yetAnotherButton.addEventListener('click', function(event) {
+        // Prevent the default behavior of the button (e.g., form submission)
+        event.preventDefault();
+
+        // Define the URL of the yet another page
+        var yetAnotherUrl = 'yet_another_page.html';
+
+        // Navigate to the yet another page
+        window.location.href = yetAnotherUrl;
+    });
+});
+
+
 
 
 
