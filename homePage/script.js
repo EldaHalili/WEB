@@ -103,10 +103,12 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
 
             // Get the href attribute of the button's parent anchor tag
-            var href = button.getAttribute('href');
+            var href = button.getAttribute('border.html');
 
             // Navigate to the linked page
             window.location.href = href;
         });
     });
 });
+
+
