@@ -2,50 +2,49 @@
 <html>
 <head>
     <title>Slide Navbar</title>
-    <link rel="stylesheet" type="text/css" href="logIN.css">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="logIN.css"> <!-- Lidhja me stilin CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet"> <!-- Lidhja me fontin nga Google Fonts -->
 </head>
 <body>
 <div class="main">
-    <input type="checkbox" id="chk" aria-hidden="true">
+    <input type="checkbox" id="chk" aria-hidden="true"> <!-- Checkbox për të shfaqur dhe fshehur formën e regjistrimit/login -->
 
+    <!-- Div për formën e regjistrimit -->
     <div class="Sign up">
         <form>
-            <label for="chk" aria-hidden="true">Sign Up</label>
-            <input type="text" name="txt" placeholder="User name" required="">
-            <input type="email" name="email" placeholder="Email" required="">
-            <input type="password" name="pswd" placeholder="Password" required="">
-            <button>Sign up</button>
+            <label for="chk" aria-hidden="true">Sign Up</label> <!-- Etiketa për shfaqjen e formës së regjistrimit -->
+            <input type="text" name="txt" placeholder="User name" required=""> <!-- Input për emrin e përdoruesit -->
+            <input type="email" name="email" placeholder="Email" required=""> <!-- Input për email-in e përdoruesit -->
+            <input type="password" name="pswd" placeholder="Password" required=""> <!-- Input për fjalëkalimin e përdoruesit -->
+            <button>Sign up</button> <!-- Butoni për të regjistruar -->
         </form>
     </div>
 
+    <!-- Div për formën e login-it -->
     <div class="login">
         <form>
-            <label for="chk" aria-hidden="true">Login</label>
-            <input type="email" name="email" placeholder="Email" required="">
-            <input type="password" name="pswd" placeholder="Password" required="">
-            <a href="#" id="forgot-password">Forgotten Password?</a>
-            <button>Login</button>
+            <label for="chk" aria-hidden="true">Login</label> <!-- Etiketa për shfaqjen e formës së login-it -->
+            <input type="email" name="email" placeholder="Email" required=""> <!-- Input për email-in e përdoruesit -->
+            <input type="password" name="pswd" placeholder="Password" required=""> <!-- Input për fjalëkalimin e përdoruesit -->
+            <a href="#" id="forgot-password">Forgotten Password?</a> <!-- Link për të shkuar te forma për të harruar fjalëkalimin -->
+            <button>Login</button> <!-- Butoni për të hyrë në llogari -->
         </form>
     </div>
 </div>
 
-<!-- Modal for Forgotten Password -->
+<!-- Modal për fjalëkalimin e harruar -->
 <div id="forgotten" class="modal">
     <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Please enter the code sent to your email:</p>
-        <input type="text" placeholder="Enter code">
-        <p>Please enter the new password:</p>
-        <input type="password" id="new-password" placeholder="New password">
-        <input type="password" id="confirm-password" placeholder="Confirm new password">
-        <a href="#"><button> Submit </button>  </a>
+        <span class="close">&times;</span> <!-- Butoni për të mbyllur modal-in -->
+        <p>Please enter the code sent to your email:</p> <!-- Paragrafi për të kërkuar kodin e dërguar në email -->
+        <input type="text" placeholder="Enter code"> <!-- Input për të vendosur kodin -->
+        <p>Please enter the new password:</p> <!-- Paragrafi për të kërkuar fjalëkalimin e ri -->
+        <input type="password" id="new-password" placeholder="New password"> <!-- Input për të vendosur fjalëkalimin e ri -->
+        <input type="password" id="confirm-password" placeholder="Confirm new password"> <!-- Input për të konfirmuar fjalëkalimin e ri -->
+        <a href="#"><button> Submit </button> </a> <!-- Butoni për të dërguar formën për të ndryshuar fjalëkalimin -->
     </div>
 </div>
 
-<script src="login.js"> </script>
-</body>
-</html>
-
+<script src="login.js"> </script> <!-- Lidhja me skriptën JavaScript -->
 </body>
 </html>

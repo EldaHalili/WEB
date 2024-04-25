@@ -1,69 +1,75 @@
-body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'Jost', sans-serif;
-    background: linear-gradient(to bottom, #6d5b5b, #716666, #d8cbcb);
+body {
+    margin: 0; /* Fshije margjinat e pamjes */
+    padding: 0; /* Fshije fushat e zbrazëta në pamje */
+    display: flex; /* Shfaq elementët në formë horizontale */
+    justify-content: center; /* Qendro elementët në mes të ekranit në drejtim horizontal */
+    align-items: center; /* Qendro elementët në mes të ekranit në drejtim vertikal */
+    min-height: 100vh; /* Jepi fundit të ekranit një lartësi të paktën 100% të ekranit */
+    font-family: 'Jost', sans-serif; /* Përdor fontin 'Jost' ose ndonjë font tjetër pa serif */
+    background: linear-gradient(to bottom, #6d5b5b, #716666, #d8cbcb); /* Përdor një gradient linear për sfond */
 }
-.main{
-    width: 350px;
-    height: 500px;
-    background: #b68d8d;
-    overflow: hidden;
-    background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
-    border-radius: 10px;
-    box-shadow: 5px 20px 50px #000;
+
+.main {
+    width: 350px; /* Gjeresia e div-it .main */
+    height: 500px; /* Lartësia e div-it .main */
+    background: #b68d8d; /* Ngjyra e sfondit të div-it .main */
+    overflow: hidden; /* Fshih përmbajtjen që tejkalon kufirin e div-it */
+    background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover; /* Përdor një imazh për sfondin dhe vendos atë në qendër duke mbuluar plotësisht hapësirën e div-it */
+    border-radius: 10px; /* Kornizat e rrumbullakëta për div-in */
+    box-shadow: 5px 20px 50px #000; /* Hapi i hijes për div-in */
 }
-#chk{
-    display: none;
+
+#chk {
+    display: none; /* Fshih checkbox-in */
 }
-.signup{
-    position: relative;
-    width:100%;
-    height: 100%;
+
+.signup {
+    position: relative; /* Cakto pozicionin e elementit si relativ */
+    width: 100%; /* Gjeresia e elementit */
+    height: 100%; /* Lartësia e elementit */
 }
-label{
-    color: #fff;
-    font-size: 2.3em;
-    justify-content: center;
-    display: flex;
-    margin: 60px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: .5s ease-in-out;
+
+label {
+    color: #fff; /* Ngjyra e tekstit të etiketave */
+    font-size: 2.3em; /* Madhësia e fontit për etiketat */
+    justify-content: center; /* Qendro tekstin në mes */
+    display: flex; /* Shfaq tekstin si një element flex */
+    margin: 60px; /* Kufiza e margjinave për etiketat */
+    font-weight: bold; /* Përdor një font të trashë */
+    cursor: pointer; /* Shfaq kursorin si një dorezë */
+    transition: .5s ease-in-out; /* Animacion i ndryshimit të shpejtësisë */
 }
-input{
-    width: 60%;
-    height: 20px;
-    background: #e0dede;
-    justify-content: center;
-    display: flex;
-    margin: 20px auto;
-    padding: 10px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
+input {
+    width: 60%; /* Gjeresia e input-it */
+    height: 20px; /* Lartësia e input-it */
+    background: #e0dede; /* Ngjyra e sfondit të input-it */
+    justify-content: center; /* Qendro përmbajtjen në mes */
+    display: flex; /* Shfaq përmbajtjen si një element flex */
+    margin: 20px auto; /* Kufiza e margjinave për input-in */
+    padding: 10px; /* Kufiza e rrahjes për input-in */
+    border: none; /* Fshih kufijtë për input-in */
+    outline: none; /* Fshih konturin për input-in */
+    border-radius: 5px; /* Kornizat e rrumbullakëta për input-in */
 }
-button{
-    width: 60%;
-    height: 40px;
-    margin: 10px auto;
-    justify-content: center;
-    display: block;
-    color: #fff;
-    background: #6d5b5b;
-    font-size: 1em;
-    font-weight: bold;
-    margin-top: 20px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    transition: .2s ease-in;
-    cursor: pointer;
+
+button {
+    width: 60%; /* Gjeresia e butonit */
+    height: 40px; /* Lartësia e butonit */
+    margin: 10px auto; /* Kufiza e margjinave për butonin */
+    justify-content: center; /* Qendro përmbajtjen në mes */
+    display: block; /* Shfaq përmbajtjen si një element bllok */
+    color: #fff; /* Ngjyra e tekstit të butonit */
+    background: #6d5b5b; /* Ngjyra e sfondit të butonit */
+    font-size: 1em; /* Madhësia e fontit për butonin */
+    font-weight: bold; /* Përdor një font të trashë për butonin */
+    margin-top: 20px; /* Kufiza e margjinave për butonin */
+    outline: none; /* Fshih konturin për butonin */
+    border: none; /* Fshih kufijtë për butonin */
+    border-radius: 5px; /* Kornizat e rrumbullakëta për butonin */
+    transition: .2s ease-in; /* Animacion i ndryshimit të shpejtësisë për butonin */
+    cursor: pointer; /* Shfaq kursorin si një dorezë */
 }
+
 button:hover{
     background: #6d5b5b;
 }
@@ -119,13 +125,13 @@ a{
 /* Modal Content */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    max-width: 400px; /* Adjust the maximum width as needed */
+    max-width: 400px;
     border-radius: 5px;
-    text-align: center; /* Center content */
-    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
+    width: 80%;
 }
 
 /* Close Button */
