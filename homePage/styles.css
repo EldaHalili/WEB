@@ -9,10 +9,7 @@
     background-image: url('foto.jpg');
 
 }
- 
 /*Header Styling*/
-
-
 #top {
     color: rgb(7, 0, 0);
     text-align: center;
@@ -289,16 +286,6 @@ h1 {
     width: calc(100% - 4rem);
     height: calc(100% - 4rem);
 }
-
-/*.abs-site-link {*/
-/*    position: fixed;*/
-/*    bottom: 20px;*/
-/*    left: 20px;*/
-/*    color: hsl(0, 7%, 48%);*/
-/*    font-size: 1.6rem;*/
-/*}*/
-
-
 .header-inner {
     text-align: center;
     color: #615353;
