@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="../common/navbar-footer.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1>Katering Table</h1>
-            <nav>
-                <ul>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+            <!--nav-->
+<nav id="navbar">
+    <ul id="navcontent">
+      <li><a href="../homePage/index.html">Home</a></li>
+      <li><a href="../aboutAs/aboutAs.html">About</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="../contact/contact.html">Contact Us</a></li>
+    </ul>
+    <a href="../logIn/logIIn.html" class="btn1">Log In</a>
+  </nav>
+        
 
     <section id="menu" class="menu">
         <div class="container">
@@ -40,15 +42,27 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>For reservations or inquiries, please contact us at:</p>
-            <p>Email: </p>
-            <p>Phone: nuktajapflm:</p>
-        </div>
-    </section>
+   
 
     <script src="index.js"></script>
 </body>
+<footer class="detailed-footer">
+    <div class="footer-info">
+        <h3>Contact Information</h3>
+        <p>Email: info@dietshop.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <p>Address: 123 Main Street, City, Country</p>
+    </div>
+    <div class="footer-social">
+        <h3>Follow Us</h3>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 DietShop. All Rights Reserved.</p>
+    </div>
+  </footer>
 </html>
