@@ -90,32 +90,4 @@ const wrap3 = new parallaxTiltEffect({
     tiltEffect: 'reverse'
 });
 
-//edhe kjoooo
-// For the "Nutrition Plan" button
-document.addEventListener('DOMContentLoaded', function() {
-    // Get all elements with the class "btn" (which are the "View More" buttons)
-    var buttons = document.querySelectorAll('.btn');
 
-    // Add click event listeners to all "View More" buttons
-    buttons.forEach(function(button) {
-        button.addEventListener('click', function(event) {
-            // Prevent the default behavior of the button (e.g., form submission)
-            event.preventDefault();
-
-            // Get the href attribute of the button's parent anchor tag
-            var href = button.getAttribute('border.html');
-
-            // Navigate to the linked page
-            window.location.href = href;
-        });
-    });
-});
-
-document.getElementById('viewMoreBtn').addEventListener('click', function() {
-    fetch('border.html') // Zëvendësoni këtë me rrugën e saktë të skedarit HTML
-        .then(response => response.text())
-        .then(html => {
-            document.body.innerHTML = html; // Or append to a specific part of the page
-        })
-        .catch(error => console.error('Error loading the page: ', error));
-});

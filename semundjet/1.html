@@ -6,7 +6,8 @@
   <title>Dieta ne baze te semundjeve</title>
   <!-- Connect your CSS file here -->
   <link rel="stylesheet" href="css.css">
-  <link rel="stylesheet" href="../common/navbar-footer.css"> <!--Lidhja e skedarit te stilizimit te perbashket te footerit dhe nav-->
+  <link href="../common/navbar-footer.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> <!--Lidhja e skedarit te stilizimit te perbashket te footerit dhe nav-->
 </head>
 <body>
   <!--nav-->
@@ -14,7 +15,13 @@
   <ul id="navcontent">
     <li><a href="../homePage/index.html">Home</a></li>
     <li><a href="../aboutAs/aboutAs.html">About</a></li>
-    <li><a href="#">Menu</a></li>
+    <li><a href="#">Menu</a>
+      <div class="dropdown-content">
+        <!-- Elementet e dropdown menu për 'Menu' -->
+        <a href="../Nutricion/border.html">Nutricione</a>
+        <a href="../semundjet/1.html">Dieta</a>
+        <a href="../catering/catering.html">Katering</a>
+      </div></li>
     <li><a href="../contact/contact.html">Contact Us</a></li>
   </ul>
   <a href="../logIn/logIIn.html" class="btn1">Log In</a>
@@ -436,12 +443,13 @@
 </section>
 <hr>
 </body>
+<!--footeri-->
 <footer class="detailed-footer">
   <div class="footer-info">
-      <h3>Contact Information</h3>
+      <h3>Informacion mbi Kontaktin</h3>
       <p>Email: info@dietshop.com</p>
       <p>Phone: +1 (555) 123-4567</p>
-      <p>Address: 123 Main Street, City, Country</p>
+      <p>Addresa: Rruga Kryesore 123, Qyteti, Shteti</p>
   </div>
   <div class="footer-social">
       <h3>Follow Us</h3>
@@ -452,8 +460,8 @@
       </ul>
   </div>
   <div class="footer-bottom">
-      <p>&copy; 2024 DietShop. All Rights Reserved.</p>
+      <p>&copy; 2024 DietShop. Te gjitha te Drejtat e Rezervuara.</p>
   </div>
 </footer>
-<script src="js.js"></script>
+<script src="js.js"></script> <!--lidhja e javascript me html-->
 </html>

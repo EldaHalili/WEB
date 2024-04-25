@@ -28,7 +28,15 @@
     <ul id="navcontent">
         <li><a href="../homePage/index.html">Home</a></li>
         <li><a href="../aboutAs/aboutAs.html">About</a></li>
-        <li><a href="#">Menu</a></li>
+        <li><a href="#">Menu</a>
+            <div class="dropdown-content">
+                <!-- Elementet e dropdown menu për 'Menu' -->
+                <a href="../Nutricion/border.html">Nutricione</a>
+                <a href="../semundjet/1.html">Dieta</a>
+                <a href="../catering/catering.html">Katering</a>
+              </div>
+        </li>
+    </li>
         <li><a href="../contact/contact.html">Contact Us</a></li>
     </ul>
 
@@ -36,37 +44,37 @@
     <a class="btn1" href="../logIn/logIIn.html">Log In</a>
 </nav>
 <div id="ContactUs">
-    <h1>Contact Us</h1>
+    <h1>Na Kontaktoni</h1>
     <form action="#" id="contactForm">
         <div class="form-shape">
-            <label for="query">Reason for Contacting</label>
+            <label for="query">Arsyeja e kontaktimit</label>
             <select id="query" name="myQuery">
-                <option selected value="sel">Select</option>
-                <option value="ord">Order related Issues</option>
-                <option value="Site">Site related Issues</option>
-                <option value="fed">Complaint related Issues</option>
-                <option value="others">Others</option>
+                <option selected value="sel">Zgjidhni</option>
+                <option value="ord">Ceshtje qe lidhen me porosine</option>
+                <option value="Site">Çështje të lidhura me site-in</option>
+                <option value="fed">Ankesa</option>
+                <option value="others">Te tjera</option>
             </select>
         </div>
         <div class="form-shape">
-            <label for="name">Name</label>
-            <input id="name" name="myName" placeholder="Enter your Name" type="text">
+            <label for="name">Emri</label>
+            <input id="name" name="myName" placeholder="Emri" type="text">
         </div>
         <div class="form-shape">
             <label for="email">Email-Id</label>
-            <input id="email" name="myEmail" placeholder="Enter your email" type="email">
+            <input id="email" name="myEmail" placeholder="Vendosni email-in" type="email">
         </div>
         <div class="form-shape">
-            <label for="pho">Phone Number</label>
-            <input id="pho" name="myPhone" placeholder="Enter your Phone no" type="tel">
+            <label for="pho">Numri i telefonit</label>
+            <input id="pho" name="myPhone" placeholder="Vendosni numrin tuaj te telefonit" type="tel">
         </div>
         <div id="radio">
-            Are you a member of OnlineFoodShop:
-            Yes <input name="eligible" type="radio" value="Yes">
-            No <input name="eligible" type="radio" value="No">
+            A jeni anëtar i DietShop:
+            Po <input name="eligible" type="radio" value="Yes">
+            Jo <input name="eligible" type="radio" value="No">
         </div>
         <div class="form-shape">
-            <label for="message">Elaborate your query</label>
+            <label for="message">Shkruani pyetjen tuaj</label>
             <textarea cols="30" id="message" name="mesg" rows="10"></textarea>
         </div>
         <input type="submit" value="Submit">
@@ -75,7 +83,7 @@
     <div class="modal" id="successModal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>The email has been sent successfully!</p>
+            <p>Email-i u dergua me sukses!</p>
         </div>
     </div>
 
@@ -112,7 +120,7 @@
                     </g>
                 </g>
             </svg>
-            <span class="rating__sr">1 star—Terrible</span>
+            <span class="rating__sr">1 yll—ShumeKeq</span>
         </label>
         <label class="rating__label" for="rating-2">
             <svg aria-hidden="true" class="rating__star" height="32" viewBox="0 0 32 32" width="32">
@@ -138,7 +146,7 @@
                     </g>
                 </g>
             </svg>
-            <span class="rating__sr">2 stars—Bad</span>
+            <span class="rating__sr">2 yje—JoMire</span>
         </label>
         <label class="rating__label" for="rating-3">
             <svg aria-hidden="true" class="rating__star" height="32" viewBox="0 0 32 32" width="32">
@@ -164,7 +172,7 @@
                     </g>
                 </g>
             </svg>
-            <span class="rating__sr">3 stars—OK</span>
+            <span class="rating__sr">3 yje—OK</span>
         </label>
         <label class="rating__label" for="rating-4">
             <svg aria-hidden="true" class="rating__star" height="32" viewBox="0 0 32 32" width="32">
@@ -190,7 +198,7 @@
                     </g>
                 </g>
             </svg>
-            <span class="rating__sr">4 stars—Good</span>
+            <span class="rating__sr">4 yje—Mire</span>
         </label>
         <label class="rating__label" for="rating-5">
             <svg aria-hidden="true" class="rating__star" height="32" viewBox="0 0 32 32" width="32">
@@ -216,35 +224,35 @@
                     </g>
                 </g>
             </svg>
-            <span class="rating__sr">5 stars—Excellent</span>
+            <span class="rating__sr">5 yje—Ekselent</span>
         </label>
-        <p class="rating__display" data-rating="1" hidden>Terrible</p>
-        <p class="rating__display" data-rating="2" hidden>Bad</p>
+        <p class="rating__display" data-rating="1" hidden>ShumeKeq</p>
+        <p class="rating__display" data-rating="2" hidden>JoMire</p>
         <p class="rating__display" data-rating="3" hidden>OK</p>
-        <p class="rating__display" data-rating="4" hidden>Good</p>
-        <p class="rating__display" data-rating="5" hidden>Excellent</p>
+        <p class="rating__display" data-rating="4" hidden>Mire</p>
+        <p class="rating__display" data-rating="5" hidden>Ekselent</p>
     </div>
 </form>
 <hr>
 <footer class="detailed-footer">
     <div class="footer-info">
-        <h3>Contact Information</h3>
-        <p>Email: info@dietshop.com</p>
-        <p>Phone: +1 (555) 123-4567</p>
-        <p>Address: 123 Main Street, City, Country</p>
+      <h3>Informacioni mbi Kontaktin</h3>
+      <p>Email: info@dietshop.com</p>
+      <p>Telefoni: +1 (555) 123-4567</p>
+      <p>Adresa: Rruga Kryesore 123, Qyteti, Shteti</p>
     </div>
     <div class="footer-social">
-        <h3>Follow Us</h3>
-        <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-        </ul>
+      <h3>Na Ndiqni</h3>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2024 DietShop. All Rights Reserved.</p>
+      <p>&copy; 2024 DietShop. Të gjitha të drejtat e rezervuara.</p>
     </div>
-</footer>
+  </footer>
 <script src="stript.js"></script>
 </body>
 

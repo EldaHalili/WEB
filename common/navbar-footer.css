@@ -6,9 +6,6 @@
     color: #6d5b5b;
     background-color: #837272;
     padding: 10px 50px;
-    border-radius: 10px;
-    margin-top: 2px;
-
 }
 
 /* Navbar links */
@@ -18,6 +15,7 @@
 }
 
 #navcontent li {
+    position: relative; /* Added */
     display: inline;
     margin-right: 20px;
 }
@@ -37,6 +35,36 @@
     text-decoration: underline;
 }
 
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: calc(100% - 8px); /* Adjusted to be below the menu item */
+    left: -10px; /* Adjusted to be closer to the menu item */
+    background-color: #837272;
+    width: 150px;
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transition: opacity 0.4s, visibility 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+#navcontent li:hover .dropdown-content { /* Changed selector to show dropdown on li hover */
+    display: block;
+    opacity: 0.9;
+    visibility: visible;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+}
+
 /* Login button styling */
 .btn1 {
     background-color: #333;
@@ -47,13 +75,11 @@
     cursor: pointer;
     font-weight: bold;
     font-size: 16px;
-
 }
 
 .btn1:hover {
     background-color: #f4f1f1;
     color: #070000;
-
 }
 
 /* Footer styling */
@@ -61,7 +87,6 @@ footer {
     background-color: #333;
     color: #b68d8d;
     padding: 50px 0;
-
 }
 
 .footer-container {
