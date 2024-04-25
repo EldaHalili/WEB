@@ -1,5 +1,5 @@
-class parallaxTiltEffect {
 
+class parallaxTiltEffect {
 
     constructor({element, tiltEffect}) {
 
@@ -90,23 +90,32 @@ const wrap3 = new parallaxTiltEffect({
     tiltEffect: 'reverse'
 });
 
-
 //edhe kjoooo
 // For the "Nutrition Plan" button
-// script.js
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all elements with the class "btn" (which are the "View More" buttons)
+    var buttons = document.querySelectorAll('.btn');
 
-// Add event listeners to each "View More" button
-// For the "Nutrition Plan" button
-document.getElementById('viewMoreBtn1').addEventListener('click', function () {
-    window.location.href = 'border.html'; // Replace 'border.html' with the URL of the page you want to navigate to for the Nutrition Plan
+    // Add click event listeners to all "View More" buttons
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            // Prevent the default behavior of the button (e.g., form submission)
+            event.preventDefault();
+
+            // Get the href attribute of the button's parent anchor tag
+            var href = button.getAttribute('border.html');
+
+            // Navigate to the linked page
+            window.location.href = href;
+        });
+    });
 });
 
-// For the "Diet Plan" button
-// document.getElementById('viewMoreBtn2').addEventListener('click', function () {
-//     window.location.href = '../semundjet/1.html'; // Replace '../semundjet/1.html' with the correct URL of the page for the Diet Plan
-// });
-
-// For the "Catering Plan" button
-document.getElementById('viewMoreBtn3').addEventListener('click', function () {
-    window.location.href = 'Nutricion/border.html'; // Replace 'border.html' with the URL of the page you want to navigate to for the Catering Plan
+document.getElementById('viewMoreBtn').addEventListener('click', function() {
+    fetch('border.html') // Zëvendësoni këtë me rrugën e saktë të skedarit HTML
+        .then(response => response.text())
+        .then(html => {
+            document.body.innerHTML = html; // Or append to a specific part of the page
+        })
+        .catch(error => console.error('Error loading the page: ', error));
 });
