@@ -110,8 +110,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
 document.getElementById('viewMoreBtn').addEventListener('click', function() {
-    fetch('../Nutricion/border.html')
+    fetch('border.html') // Zëvendësoni këtë me rrugën e saktë të skedarit HTML
         .then(response => response.text())
         .then(html => {
             document.body.innerHTML = html; // Or append to a specific part of the page
