@@ -1,5 +1,6 @@
 class parallaxTiltEffect {
 
+
     constructor({element, tiltEffect}) {
 
         this.element = element;
@@ -89,6 +90,7 @@ const wrap3 = new parallaxTiltEffect({
     tiltEffect: 'reverse'
 });
 
+
 //edhe kjoooo
 // For the "Nutrition Plan" button
 // script.js
@@ -106,8 +108,5 @@ document.getElementById('viewMoreBtn1').addEventListener('click', function () {
 
 // For the "Catering Plan" button
 document.getElementById('viewMoreBtn3').addEventListener('click', function () {
-    window.location.href = 'border.html'; // Replace 'border.html' with the URL of the page you want to navigate to for the Catering Plan
+    window.location.href = 'Nutricion/border.html'; // Replace 'border.html' with the URL of the page you want to navigate to for the Catering Plan
 });
-
-
-
