@@ -301,7 +301,7 @@ h1 {
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;
+    top: calc(100% - 8px);
     left: 50%;
     transform: translateX(-50%);
     background-color: #837272;
@@ -311,7 +311,8 @@ h1 {
     transition: opacity 0.4s, visibility 0.4s;
     opacity: 0;
     visibility: hidden;
-    border-radius: 8px; /* Shkurton rrethimet e dropdown menu-së */
+    border-radius: 8px; 
+    z-index: 1;/* Shkurton rrethimet e dropdown menu-së */
 }
 
 .dropdown:hover .dropdown-content {
