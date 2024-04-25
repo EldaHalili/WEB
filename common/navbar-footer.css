@@ -39,8 +39,8 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    top: calc(100% + 8px); /* Adjusted to be below the menu item */
-    left: 0; /* Adjusted to align with the menu item */
+    top: calc(100% - 8px); /* Adjusted to be below the menu item */
+    left: -10px; /* Adjusted to be closer to the menu item */
     background-color: #837272;
     width: 150px;
     padding: 10px;
