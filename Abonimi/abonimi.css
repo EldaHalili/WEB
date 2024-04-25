@@ -257,7 +257,7 @@
 .card-sub {
     height: 600px; /* Increased height from your original settings */
     margin: 37px; /* Adds more space around each card */
-    width: 350px; /* Keeping your width the same as defined, adjust if needed */
+    width: 280px; /* Keeping your width the same as defined, adjust if needed */
 }
 
 .card-img-top-sub {

@@ -164,10 +164,11 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .detailed .detailed-footer {
+  .footer-container {
       width: calc(50% - 40px);
   }
 }
+
 
 .detailed-footer {
   background-color: #f8f8f8;
@@ -194,6 +195,17 @@ footer {
   display: inline;
   margin: 0 10px;
 }
+.footer-social ul li a {
+ 
+  padding-bottom: 2px; /* Add some padding below the links to separate the line */
+}
+
+.footer-social ul li a:hover,
+.footer-social ul li a:active {
+  border-bottom-color: transparent; /* Hide the default underline on hover or active */
+  text-decoration: underline; /* Add underline on hover and when active */
+}
+
 
 .footer-bottom {
   margin-top: 20px;
