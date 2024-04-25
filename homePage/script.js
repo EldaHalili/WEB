@@ -103,12 +103,18 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
 
             // Get the href attribute of the button's parent anchor tag
-            var href = button.getAttribute('html');
+            var href = button.getAttribute('border.html');
 
             // Navigate to the linked page
             window.location.href = href;
         });
     });
 });
-
-
+document.getElementById('viewMoreBtn').addEventListener('click', function() {
+    fetch('../Nutricion/border.html')
+        .then(response => response.text())
+        .then(html => {
+            document.body.innerHTML = html; // Or append to a specific part of the page
+        })
+        .catch(error => console.error('Error loading the page: ', error));
+});
