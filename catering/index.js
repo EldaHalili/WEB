@@ -1,10 +1,10 @@
 // Sample menu items data
 const menuItems = [
-    { item: 'Spaghetti Bolognese', price: 10 },
-    { item: 'Caesar Salad', price: 8 },
-    { item: 'Grilled Salmon', price: 15 },
-    { item: 'Margherita Pizza', price: 12 },
-    { item: 'Chicken Alfredo Pasta', price: 11 }
+    { item: 'Spaghetti Bolognese', price: 1000 },
+    { item: 'Caesar Salad', price: 350 },
+    { item: 'Grilled Salmon', price: 1100 },
+    { item: 'Margherita Pizza', price: 400 },
+    { item: 'Chicken Alfredo Pasta', price: 800 }
 ];
 
 // Function to populate the table with menu items
