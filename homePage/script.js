@@ -90,6 +90,8 @@ const wrap3 = new parallaxTiltEffect({
     tiltEffect: 'reverse'
 });
 
+
+
 //edhe kjoooo
 // For the "Nutrition Plan" button
 document.addEventListener('DOMContentLoaded', function() {
