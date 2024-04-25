@@ -149,3 +149,35 @@ section .card h2 {
 .testimonial p {
     color: #615353; /* Ngjyra që dëshironi për tekstin e komentit */
 }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: calc(100% - 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #837272;
+    width: 150px; /* Shkurton madhësinë e dropdown menu-së */
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transition: opacity 0.4s, visibility 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 8px;
+    z-index: 1;/* Shkurton rrethimet e dropdown menu-së */
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 0.9;
+    visibility: visible;
+}
+.dropdown-content a {
+    color: white;
+    padding: 10px 14px; /* Shkurton polsat e tekstit në dropdown menu */
+    text-decoration: none;
+    display: block;
+}
+.header-inner {
+    text-align: center;
+    color: #615353;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, .8);
+}
